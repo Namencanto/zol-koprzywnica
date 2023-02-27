@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth !important;
+  font-family: "Catamaran", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[##f4fdfc] text-[#1f2937] tracking-wide;
+  }
+  p {
+    font-family: "Catamaran", sans-serif;
+
+    @apply text-[var(--text-color-primary)];
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Catamaran", sans-serif;
+
+    @apply font-bold text-[var(--text-color-primary)];
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  /* font-[Raleway] */
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  /* button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
+  } */
+}
+@layer utilities {
+  .btn-main-primary {
+    @apply cursor-pointer inline-flex items-center justify-center w-full px-6 py-3 mb-2 text-white bg-[var(--btn-color-primary)] rounded-md hover:bg-[var(--btn-color-primary-hover)] sm:w-auto sm:mb-0;
+  }
+  .btn-outline-primary {
+    @apply inline-flex items-center justify-center h-16 px-10 py-0 text-xl font-semibold text-center text-[var(--btn-color-primary)] no-underline align-middle transition-all duration-300 ease-in-out bg-transparent border-[2px] border-[var(--btn-color-primary)] border-solid rounded-full cursor-pointer select-none hover:text-[var(--btn-color-primary-hover)] hover:border-[var(--btn-color-primary-hover)] focus:shadow-sm focus:no-underline;
+  }
+
+  .btn-outline-secondary {
+    @apply inline-flex items-center justify-center h-16 px-10 py-0 text-xl font-semibold text-center text-[var(--btn-color-secondary)] no-underline align-middle transition-all duration-300 ease-in-out bg-transparent border-[2px] border-[var(--btn-color-secondary)] border-solid rounded-full cursor-pointer select-none hover:text-[var(--btn-color-secondary-hover)] hover:border-[var(--btn-color-secondary-hover)] focus:shadow-sm focus:no-underline;
+  }
+}
+
+:root {
+  --text-color-primary: #134944;
+  --text-color-secondary: #f4fdfc;
+
+  --background-color-primary: #134944;
+  --background-color-secondary: #f4fdfc;
+
+  --btn-color-primary: #0ba597;
+  --btn-color-primary-hover: #1cb6a8;
+
+  --btn-color-secondary: #f4fdfc;
+  --btn-color-secondary-hover: #ffffff;
+
+  --swiper-navigation-color: #0ba597;
+}
+
+@media (max-width: 767px) {
+  .navicon {
+    width: 1.125em;
+    height: 0.125em;
+  }
+
+  .navicon::before,
+  .navicon::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-out;
+    content: "";
+    background: #3d4852;
+  }
+
+  .navicon::before {
+    top: 5px;
+  }
+
+  .navicon::after {
+    top: -5px;
+  }
+
+  .menu-btn:not(:checked) ~ .menu {
+    display: none;
+  }
+
+  .menu-btn:checked ~ .menu {
+    display: block;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon::before,
+  .menu-btn:checked ~ .menu-icon .navicon::after {
+    top: 0;
+  }
+}
+.max-height-enter {
+  max-height: 0;
+  transition: max-height 0.75s ease-in-out;
+}
+
+.max-height-enter-active {
+  max-height: 100vh;
+}
+
+.max-height-exit {
+  max-height: 100vh;
+  transition: max-height 0.75s ease-in-out;
+}
+
+.max-height-exit-active {
+  max-height: 0;
+}
+.scaleup {
+  animation-name: scaleup;
+  animation-duration: 10s;
+  animation-fill-mode: forwards; /* zatrzymaj animację na ostatniej klatce */
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(1); /* początkowy rozmiar obrazka */
+  }
+  100% {
+    transform: scale(1.1); /* końcowy rozmiar obrazka */
+  }
+}
+
+/* Animacja dla rozwijania sekcji FAQ */
+.faq-enter {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-enter-active {
+  max-height: 1000px;
+  transition: max-height 500ms ease-in;
+}
+
+.faq-exit {
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+.faq-exit-active {
+  max-height: 0;
+  transition: max-height 250ms ease-out;
+}
+.faq-btn .rotate-up {
+  animation: rotateUp 0.15s linear forwards;
+}
+
+.faq-btn .rotate-down {
+  animation: rotateDown 0.15s linear forwards;
+}
+
+@keyframes rotateUp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes rotateDown {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.info-transition-enter {
+  opacity: 0;
+  transform: translateX(50%);
+}
+
+.info-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.info-transition-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.info-transition-exit-active {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
