@@ -1,6 +1,19 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+module.exports = {
+  webpack: (config, { isServer }) => {
+    config.module.rules.push({
+      test: /\.(docx)$/,
+      use: [
+        {
+          loader: "file-loader",
+          options: {
+            publicPath: "/_next/static/documents",
+            outputPath: `${isServer ? "../" : ""}static/documents`,
+            name: "[name].[hash].[ext]",
+          },
+        },
+      ],
+    });
 
-module.exports = nextConfig
+    return config;
+  },
+};
