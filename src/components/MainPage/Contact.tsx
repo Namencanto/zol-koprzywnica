@@ -1,6 +1,8 @@
+import { Button } from "@mui/material";
 import Link from "next/link";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useContext } from "react";
 import { contactData } from "src/static/contactData";
+import { ThemeContext } from "src/context/themeContext";
 interface ContactFormData {
   firstName: string;
   lastName: string;
@@ -10,6 +12,7 @@ interface ContactFormData {
 }
 
 const Contact = () => {
+  const { theme } = useContext(ThemeContext);
   // Define state variables for form data and validation errors
   const [formData, setFormData] = useState<ContactFormData>({
     firstName: "",
@@ -171,14 +174,14 @@ const Contact = () => {
 
   return (
     <>
-      <div id="kontakt" className=" max-w-[1240px] m-auto h-[auto] mt-24">
+      <div id="kontakt" className=" max-w-[1240px] m-auto h-[auto] mt-24 px-4">
         <h2 className="text-3xl border-b-2 border-gray-200 pb-2 font-normal">
           Kontakt
         </h2>
       </div>
-      <div className=" p-2 pt-8">
-        <div className="flex justify-center items-center w-full  bg-white">
-          <div className="container mx-auto my-4 px-4 lg:px-40">
+      <div className="p-2 pt-8">
+        <div className="flex justify-center items-center w-full bg-background-secondary">
+          <div className="container mx-auto my-4 px-4 2xl:px-40">
             <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
               <form
                 onSubmit={(e) => {
@@ -186,15 +189,15 @@ const Contact = () => {
                 }}
               >
                 <div className="flex">
-                  <h1 className="font-bold uppercase text-5xl">
+                  <h2 className="font-bold uppercase text-2xl sm:text-5xl">
                     Wyślij do nas
                     <br /> wiadomość
-                  </h1>
+                  </h2>
                 </div>
                 <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
                   <div>
                     <input
-                      className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline "
+                      className="w-full bg-background-tertiary text-text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline "
                       type="text"
                       name="firstName"
                       placeholder="Imię*"
@@ -213,7 +216,7 @@ const Contact = () => {
 
                   <div>
                     <input
-                      className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                      className="w-full bg-background-tertiary text-text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                       type="text"
                       placeholder="Nazwisko*"
                       name="lastName"
@@ -231,7 +234,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <input
-                      className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                      className="w-full bg-background-tertiary text-text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                       type="email"
                       placeholder="Email*"
                       name="email"
@@ -247,7 +250,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <input
-                      className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                      className="w-full bg-background-tertiary text-text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                       type="number"
                       placeholder="Telefon*"
                       name="phone"
@@ -266,7 +269,7 @@ const Contact = () => {
                   <div className="my-4">
                     <textarea
                       placeholder="Wiadomość*"
-                      className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                      className="w-full h-32 bg-background-tertiary text-text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                       name="message"
                       onChange={(e) => {
                         setTouched((prevState) => ({
@@ -283,12 +286,18 @@ const Contact = () => {
                 </div>
 
                 <div className="my-2 w-1/2 lg:w-1/3">
-                  <button
-                    className="uppercase text-sm font-bold tracking-wide bg-primary text-gray-100 p-3 rounded-lg w-full 
-                      focus:outline-none focus:shadow-outline"
+                  <Button
+                    type="submit"
+                    variant="contained"
+                    color="primary"
+                    className={`uppercase text-sm font-bold tracking-wide text-text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline ${
+                      theme === "light"
+                        ? "bg-primary hover:bg-btn-primary-hover"
+                        : "bg-secondary hover:bg-[#3A3A3A]"
+                    }`}
                   >
                     Wyślij wiadomość
-                  </button>
+                  </Button>
                 </div>
               </form>
               <p
@@ -303,12 +312,16 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-primary rounded-2xl">
+            <div
+              className={`w-full lg:-mt-96 lg:w-2/6 sm:px-8 sm:py-12 px-4 py-4 ml-auto rounded-2xl ${
+                theme === "light" ? "bg-primary" : "bg-secondary"
+              }`}
+            >
               <div className="flex flex-col text-white">
-                <h1 className="font-bold uppercase text-4xl my-4 text-gray-200">
+                <h1 className="font-bold uppercase text-4xl my-4 text-text-gray-200 break-words">
                   Skontaktuj się z nami
                 </h1>
-                <p className="text-gray-400">
+                <p className="text-text-gray-400">
                   Zadzwoń do nas lub napisz wiadomość poprzez formularz lub
                   e-mail
                 </p>
@@ -318,58 +331,64 @@ const Contact = () => {
                     <i className="fas fa-map-marker-alt pt-2 pr-2" />
                   </div>
                   <div className="flex flex-col">
-                    <h2 className="text-2xl text-gray-200">Nasze biuro</h2>
-                    <p className="text-gray-400">{contactData.location[0]}</p>
-                    <p className="text-gray-400">{contactData.location[1]}</p>
+                    <h2 className="text-2xl text-text-gray-200">Nasze biuro</h2>
+                    <p className="text-text-gray-400">
+                      {contactData.location[0]}
+                    </p>
+                    <p className="text-text-gray-400">
+                      {contactData.location[1]}
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex my-4 w-2/3 lg:w-2/3">
+                <div className="flex my-4 w-1/1 lg:w-2/3">
                   <div className="flex flex-col">
                     <i className="fas fa-phone-alt pt-2 pr-2" />
                   </div>
                   <div className="flex flex-col">
-                    <h2 className="text-2xl text-gray-200">Zadzwoń do nas</h2>
+                    <h2 className="text-2xl text-text-gray-200">
+                      Zadzwoń do nas
+                    </h2>
                     <div className="flex">
-                      <p className="mr-1 text-gray-300">Tel:</p>
+                      <p className="mr-1 text-text-gray-300">Tel:</p>
                       <Link
                         href={`tel:${contactData.landLineNumbers[0]}`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
-                        className="text-gray-400"
+                        className="text-text-gray-400"
                       >
                         {contactData.landLineNumbers[0]}
                       </Link>
                     </div>
                     <div className="flex">
-                      <p className="mr-1 text-gray-300">Tel 2:</p>
+                      <p className="mr-1 text-text-gray-300">Tel 2:</p>
                       <Link
                         href={`tel:${contactData.landLineNumbers[1]}`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
-                        className="text-gray-400"
+                        className="text-text-gray-400"
                       >
                         {contactData.landLineNumbers[1]}
                       </Link>
                     </div>
                     <div className="flex">
-                      <p className="mr-1 text-gray-300">Tel komórkowy:</p>
+                      <p className="mr-1 text-text-gray-300">Tel komórkowy:</p>
                       <Link
                         href={`tel:${contactData.phoneNumber}`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
-                        className="text-gray-400"
+                        className="text-text-gray-400"
                       >
                         {contactData.phoneNumber}
                       </Link>
                     </div>
-                    <div className="flex">
-                      <p className="mr-1 text-gray-300">Email:</p>
+                    <div className="flex flex-wrap break-all">
+                      <p className="mr-1 text-text-gray-300">Email:</p>
                       <Link
                         href={`mailto:${contactData.email}`}
                         aria-label="Our email"
                         title="Our email"
-                        className="text-gray-400"
+                        className="text-text-gray-400	"
                       >
                         {contactData.email}
                       </Link>

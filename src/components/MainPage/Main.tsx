@@ -9,7 +9,6 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Typewriter from "typewriter-effect";
-import { CSSTransition } from "react-transition-group";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -66,6 +65,7 @@ const Main = () => {
       >
         <SwiperSlide className="overflow-hidden">
           <Image
+            fill
             src={Slider1}
             alt="Widok na zakład opiekuńczo-leczniczy ze strony ulicy"
             className={`w-full h-full object-cover ${loaded || "scaleup"}`}
@@ -73,6 +73,7 @@ const Main = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            fill
             src={Slider2}
             alt="Widok na fasadę zakładu opiekuńczo-leczniczego"
             className="w-full h-full object-cover"
@@ -80,6 +81,7 @@ const Main = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
+            fill
             src={Slider3}
             alt="Widok na zakład opiekuńczo-leczniczy od tyłu"
             className="w-full h-full object-cover"

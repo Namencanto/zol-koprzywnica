@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import EmptyPhotos from "../../../public/images/empty-photos.png";
 import { Event } from "src/static/types";
+import { generateFriendlyLink } from "./generateFriendlyLink";
 
 interface CurrentEventProps {
   currentTitle: string;
@@ -44,20 +45,24 @@ const CheckOthers: React.FC<CurrentEventProps> = ({
               <Link
                 className="w-1/3 px-2"
                 key={i}
-                href={`/wydarzenia/${event.title}`}
+                href={`/wydarzenia/${generateFriendlyLink(event.title)}`}
                 onClick={shuffleEvents}
               >
-                <Image
-                  src={event.images ? event.images![0] : EmptyPhotos}
-                  alt=""
-                  className="w-full h-48 object-cover border-2 border-gray-300"
-                  height={192}
-                  width={400}
-                />
-                <div>
+                <div className="hover:underline">
+                  <Image
+                    src={event.images ? event.images![0] : EmptyPhotos}
+                    alt={
+                      event.images
+                        ? `Zdjęcie opisujące wydarzenie ${event.title}`
+                        : `Brak dostępnego zdjęcia dla wydarzenia ${event.title}`
+                    }
+                    className="w-full h-48 object-cover border-2 border-gray-300"
+                    height={192}
+                    width={400}
+                  />
                   <h3>{event.title}</h3>
-                  <p>{event.date}</p>
                 </div>
+                <p>{event.date}</p>
               </Link>
             );
           }

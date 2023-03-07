@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Events } from "src/static/types";
 import Link from "next/link";
-
+import { generateFriendlyLink } from "../WydarzeniaPageComponents/generateFriendlyLink";
 const News: React.FC<Events> = ({ allEvents }) => {
   return (
     <section className="px-4 bg-background-secondary py-24">
@@ -15,24 +15,28 @@ const News: React.FC<Events> = ({ allEvents }) => {
             Ważne wydarzenia
           </h2>
           <div className="flex flex-col md:flex-row -mx-1.5 p-4">
-            <a
-              href={`wydarzenia/${allEvents[allEvents.length - 1].title}`}
+            <Link
+              href={`wydarzenia/${generateFriendlyLink(
+                allEvents[allEvents.length - 1].title
+              )}`}
               className="h-72 md:h-auto w-full md:w-7/12 mx-1.5 mb-6 md:mb-0 group"
             >
               <div className="h-72 md:h-full relative">
                 {allEvents[allEvents.length - 1].images ? (
                   <Image
                     fill
-                    alt=""
+                    alt={`Zdjęcie opisujące wydarzenie ${
+                      allEvents[allEvents.length - 1].title
+                    }`}
                     src={allEvents[allEvents.length - 1].images![0]}
                     className="absolute z-0 object-cover w-full h-72 md:h-full rounded-md"
                   />
                 ) : null}
                 <div className="absolute gradient w-full h-72 md:h-full rounded-md z-10"></div>
                 <div className="absolute left-0 right-0 bottom-0 p-4 z-30">
-                  <h1 className="font-bold text-white leading-tight sm:mb-1.5 group-hover:underline text-2xl md:text-3xl">
+                  <h3 className="font-bold text-white leading-tight sm:mb-1.5 group-hover:underline text-2xl md:text-3xl">
                     {allEvents[allEvents.length - 1].title}
-                  </h1>
+                  </h3>
                   <div className="text-xs text-white hidden sm:block">
                     <div className="flex items-center">
                       <svg
@@ -57,29 +61,29 @@ const News: React.FC<Events> = ({ allEvents }) => {
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
             <div className="w-full md:w-5/12 mx-1.5">
               {allEvents.slice(-4).map(({ title, images, date }, i) => {
                 if (i !== 3)
                   return (
                     <Link
                       key={title}
-                      href={`wydarzenia/${title}`}
+                      href={`wydarzenia/${generateFriendlyLink(title)}`}
                       className="flex sm:min-h-[31%] items-center group mb-3 pb-3 border-b"
                     >
                       {images !== undefined ? (
                         <Image
-                          alt=""
+                          alt={`Zdjęcie opisujące wydarzenie ${title}`}
                           src={images[0]}
-                          width={200}
-                          height={300}
+                          width={96}
+                          height={96}
                           className="rounded-md object-cover mr-3 h-24 w-24"
                         />
                       ) : null}
                       <div className="flex-1">
-                        <h2 className="font-bold text-lg leading-tight group-hover:underline mb-2">
+                        <h3 className="font-bold text-lg leading-tight group-hover:underline mb-2">
                           {title}
-                        </h2>
+                        </h3>
                         <div className="flex items-center">
                           <svg
                             aria-hidden="true"

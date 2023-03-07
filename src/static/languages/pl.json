@@ -3,6 +3,7 @@
     {
       "date": "12-2004",
       "title": "Zakupiono podnośnik dla pacjentów TRIXIE LIFT",
+      "slug": "zakupiono-podnosnik-dla-pacjentow-trixie-lift",
       "description": [
         "Na cele ZOL zakupiono podnośnik dla pacjentów TRIXIE LIFT.",
         "Zakup wspomogła między innymi Huta Szkła PILKINGTON Automotive, Sandomierz."
@@ -236,6 +237,24 @@
         "/images/events/2010/otwarcie-nowej-czesci-zakladu/5.jpg",
         "/images/events/2010/otwarcie-nowej-czesci-zakladu/6.jpg"
       ]
+    },
+    {
+      "date": "15-06-2010",
+      "title": "Poświęcenie obrazu św. Walentego przez biskupa Krzysztofa Nitkiewicza",
+      "description": [
+        "W dniu 15 czerwca 2010 roku w zakładzie opiekuńczo-leczniczym w Koprzywnicy odbyło się poświęcenie obrazu św. Walentego przez biskupa Krzysztofa Nitkiewicza."
+      ],
+      "images": [
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/1.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/2.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/3.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/4.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/5.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/6.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/7.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/8.jpg",
+        "/images/events/2010/poswiecenie-obrazu-sw-walentego-krzysztof-nitkiewicz/9.jpg"
+      ]
     }
   ],
   "2011": [
@@ -278,6 +297,24 @@
       ]
     }
   ],
+  "2013": [
+    {
+      "date": "07-04-2013",
+      "title": "Dziesięciolecie Zakładu Opiekuńczo-Leczniczego",
+      "description": ["Do opisu ! sic!"],
+      "images": [
+        "/images/events/2013/10-lecie-zakladu/1.jpg",
+        "/images/events/2013/10-lecie-zakladu/2.jpg",
+        "/images/events/2013/10-lecie-zakladu/3.jpg",
+        "/images/events/2013/10-lecie-zakladu/4.jpg",
+        "/images/events/2013/10-lecie-zakladu/5.jpg",
+        "/images/events/2013/10-lecie-zakladu/6.jpg",
+        "/images/events/2013/10-lecie-zakladu/7.jpg",
+        "/images/events/2013/10-lecie-zakladu/8.jpg",
+        "/images/events/2013/10-lecie-zakladu/9.jpg"
+      ]
+    }
+  ],
   "2015": [
     {
       "date": "30-05-2015",
@@ -294,6 +331,43 @@
         "/images/events/2015/renowacja-figurki/1.jpg",
         "/images/events/2015/renowacja-figurki/2.jpg",
         "/images/events/2015/renowacja-figurki/3.jpg"
+      ]
+    },
+    {
+      "date": "26-07-2015",
+      "title": "Obchody stulecia P. Genowefy Drozdżal",
+      "description": [
+        "26 lipca 2015 roku w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy odbyła się uroczystość z okazji stulecia urodzin Pani Genowefy Drozdżal."
+      ],
+      "images": [
+        "/images/events/2015/obchody-stulecia/1.jpg",
+        "/images/events/2015/obchody-stulecia/2.jpg",
+        "/images/events/2015/obchody-stulecia/3.jpg",
+        "/images/events/2015/obchody-stulecia/4.jpg",
+        "/images/events/2015/obchody-stulecia/5.jpg",
+        "/images/events/2015/obchody-stulecia/6.jpg",
+        "/images/events/2015/obchody-stulecia/7.jpg",
+        "/images/events/2015/obchody-stulecia/8.jpg",
+        "/images/events/2015/obchody-stulecia/9.jpg",
+        "/images/events/2015/obchody-stulecia/10.jpg"
+      ]
+    }
+  ],
+  "2017": [
+    {
+      "date": "20-02-2017",
+      "title": "Wizyta Biskupa Krzysztofa Nitkiewicza",
+      "description": ["Do opisu ! sic!"],
+      "images": [
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/1.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/2.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/3.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/4.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/5.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/6.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/7.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/8.jpg",
+        "/images/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/9.jpg"
       ]
     }
   ],
@@ -315,6 +389,42 @@
         "/images/events/2018/uroczystosc-15lecia-zakladu/6.jpg",
         "/images/events/2018/uroczystosc-15lecia-zakladu/7.jpg",
         "/images/events/2018/uroczystosc-15lecia-zakladu/8.jpg"
+      ]
+    },
+    {
+      "date": "11-2018",
+      "title": "Przekazanie i poświęcenie pamiątkowej figurki „Chrystusa Ukrzyżowanego”, przez Pana Jana Materkowskiego z rodziną.",
+      "description": ["Do opisu ! sic!"],
+      "images": [
+        "/images/events/2018/przekazanie-figurki/1.jpg",
+        "/images/events/2018/przekazanie-figurki/2.jpg",
+        "/images/events/2018/przekazanie-figurki/3.jpg",
+        "/images/events/2018/przekazanie-figurki/4.jpg",
+        "/images/events/2018/przekazanie-figurki/5.jpg",
+        "/images/events/2018/przekazanie-figurki/6.jpg",
+        "/images/events/2018/przekazanie-figurki/7.jpg",
+        "/images/events/2018/przekazanie-figurki/8.jpg",
+        "/images/events/2018/przekazanie-figurki/9.jpg",
+        "/images/events/2018/przekazanie-figurki/10.jpg",
+        "/images/events/2018/przekazanie-figurki/11.jpg"
+      ]
+    }
+  ],
+  "2022": [
+    {
+      "date": "22-11-2022",
+      "title": "Wizyta Biskupa Krzysztofa Nitkiewicza",
+      "description": ["Do opisu ! sic!"],
+      "images": [
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/1.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/2.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/3.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/4.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/5.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/6.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/7.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/8.jpg",
+        "/images/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/9.jpg"
       ]
     }
   ]

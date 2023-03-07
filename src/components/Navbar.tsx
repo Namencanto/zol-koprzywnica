@@ -14,6 +14,9 @@ const Navbar = () => {
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
   const toggleDropdownOpen = () => {
     setIsDropdownOpen(true);
   };
@@ -84,7 +87,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      <input className=" menu-btn hidden" type="checkbox" id="menu-btn" />
+      <input
+        onClick={toggleDropdownClose}
+        className=" menu-btn hidden"
+        type="checkbox"
+        id="menu-btn"
+      />
       <label
         className="menu-icon block cursor-pointer xl:hidden sm:px-6 py-4 pr-4 relative select-none"
         htmlFor="menu-btn"
@@ -116,8 +124,10 @@ const Navbar = () => {
           }`}
         >
           <button
-            className="flex items-center justify-center hover:text-primary"
-            onClick={toggleDropdownOpen}
+            aria-haspopup="true"
+            className="flex px-4 py-3 items-center justify-center hover:text-primary"
+            onClick={toggleDropdown}
+            onMouseLeave={toggleDropdownClose}
           >
             <span className="text-xl mr-2 ">Stowarzyszenie</span>
             {isDropdownOpen ? (
@@ -127,7 +137,11 @@ const Navbar = () => {
             )}
           </button>
           {isDropdownOpen && (
-            <ul className="absolute top-full left-0 right-0 bg-background-secondary z-10 border border-text-gray-300 rounded-b-lg overflow-hidden">
+            <ul
+              onMouseEnter={toggleDropdownOpen}
+              onMouseLeave={toggleDropdownClose}
+              className="absolute top-full left-0 right-0 bg-background-secondary z-10 border border-text-gray-300 rounded-b-lg overflow-hidden"
+            >
               {dropdownLinks.map((link) => (
                 <li key={link.href}>
                   <Link legacyBehavior href={link.href}>

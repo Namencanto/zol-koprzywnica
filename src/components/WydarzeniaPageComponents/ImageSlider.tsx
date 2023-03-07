@@ -46,7 +46,7 @@ const ImageSlider: React.FC<Props> = ({
     <div className="relative">
       {displayImage && (
         <div
-          className="fixed z-10 top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center"
+          className="fixed z-50 top-0 left-0 w-full h-full bg-black bg-opacity-75 flex items-center justify-center"
           onClick={handleFullscreenClose}
         >
           <div className="relative w-full h-full flex items-center justify-center">
@@ -58,7 +58,7 @@ const ImageSlider: React.FC<Props> = ({
               height={500}
               src={images[selectedImage]}
               alt={`Slide ${selectedImage}`}
-              className="w-full h-4/6 object-contain"
+              className="w-auto h-4/6 object-contain"
             />
             <button className="absolute top-4 right-4 p-2 text-white bg-gray-700 bg-opacity-80 rounded-full focus:outline-none">
               <IoClose size={24} />

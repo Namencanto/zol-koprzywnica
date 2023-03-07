@@ -59,22 +59,41 @@ html {
 }
 
 :root {
+  --shadow-color: "rgb(0 0 0 / 0.1)";
+
+  --text-gray-100: rgb(243 244 246);
+  --text-gray-200: rgb(229 231 235);
+  --text-gray-300: rgb(209 213 219);
+  --text-gray-400: rgb(156 163 175);
+  --text-gray-500: rgb(107 114 128);
+  --text-gray-600: rgb(75 85 99);
+  --text-gray-800: rgb(31 41 55);
+  --text-gray-900: rgb(17 24 39);
+
   --text-color-primary: #134944;
-  --text-color-secondary: #f4fdfc;
+  --text-color-secondary: #fff;
+  --text-color-tertiary: #000;
 
   --background-color-primary: #134944;
-  --background-color-secondary: #f4fdfc;
+  --background-color-secondary: #fff;
+  --background-color-tertiary: #f3f4f6;
 
   --btn-color-primary: #0ba597;
-  --btn-color-primary-hover: #1cb6a8;
-
+  --btn-color-primary-hover: #245a55;
+  /* 1cb6a8 */
   --btn-color-secondary: #f4fdfc;
   --btn-color-secondary-hover: #ffffff;
 
   --swiper-navigation-color: #0ba597;
+  --swiper-theme-color: #0ba597 !important;
 }
-
-@media (max-width: 767px) {
+@media (max-width: 320px) {
+  .menu-icon {
+    margin: auto;
+    padding-bottom: 1.5rem;
+  }
+}
+@media (max-width: 1280px) {
   .navicon {
     width: 1.125em;
     height: 0.125em;
@@ -88,7 +107,7 @@ html {
     height: 100%;
     transition: all 0.2s ease-out;
     content: "";
-    background: #3d4852;
+    background: var(--text-color-primary);
   }
 
   .navicon::before {
@@ -140,20 +159,6 @@ html {
 
 .max-height-exit-active {
   max-height: 0;
-}
-.scaleup {
-  animation-name: scaleup;
-  animation-duration: 10s;
-  animation-fill-mode: forwards; /* zatrzymaj animację na ostatniej klatce */
-}
-
-@keyframes scaleup {
-  0% {
-    transform: scale(1); /* początkowy rozmiar obrazka */
-  }
-  100% {
-    transform: scale(1.1); /* końcowy rozmiar obrazka */
-  }
 }
 
 /* Animacja dla rozwijania sekcji FAQ */
@@ -222,4 +227,19 @@ html {
   opacity: 0;
   transform: translateX(-50%);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.scaleup {
+  animation-name: scaleup;
+  animation-duration: 10s;
+  animation-fill-mode: forwards; /* zatrzymaj animację na ostatniej klatce */
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(1); /* początkowy rozmiar obrazka */
+  }
+  100% {
+    transform: scale(1.1); /* końcowy rozmiar obrazka */
+  }
 }

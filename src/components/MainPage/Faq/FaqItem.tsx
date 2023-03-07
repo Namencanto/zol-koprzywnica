@@ -6,10 +6,11 @@ type FaqProps = {
   question: string;
   answer: string;
   isOpen: boolean;
+  id: number;
   onClick: () => void;
 };
 
-const FAQItem = ({ question, answer, isOpen, onClick }: FaqProps) => {
+const FAQItem = ({ question, answer, isOpen, id, onClick }: FaqProps) => {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -22,9 +23,17 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FaqProps) => {
   }, [isOpen]);
 
   return (
-    <div className="single-faq mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8">
-      <button className="faq-btn flex w-full text-left" onClick={handleClick}>
-        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-gray-100  text-primary">
+    <section
+      aria-label={`Pytanie ${question}`}
+      className="single-faq mb-8 w-full rounded-lg border border-background-secondary bg-background-secondary p-4 sm:p-8 lg:px-6 xl:px-8"
+    >
+      <button
+        className="faq-btn flex w-full text-left"
+        onClick={handleClick}
+        aria-expanded={open ? "true" : "false"}
+        aria-controls={`faq-${id}-content`}
+      >
+        <div className="mr-5 flex h-10 w-full max-w-[40px] items-center justify-center rounded-lg bg-background-tertiary text-primary">
           {open ? (
             <FaChevronUp className="rotate-up" />
           ) : (
@@ -32,7 +41,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FaqProps) => {
           )}
         </div>
         <div className="w-full">
-          <h4 className="text-lg font-semibold text-black">{question}</h4>
+          <h3 className="text-lg font-semibold text-tertiary">{question}</h3>
         </div>
       </button>
       <TransitionGroup>
@@ -42,7 +51,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FaqProps) => {
             timeout={{ enter: 300, exit: 300 }}
             unmountOnExit
           >
-            <div className="faq-content pl-[62px]">
+            <div id={`faq-${id}-content`} className="faq-content pl-[62px]">
               <p className="py-3 text-base leading-relaxed text-body-color">
                 {answer}
               </p>
@@ -50,7 +59,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FaqProps) => {
           </CSSTransition>
         )}
       </TransitionGroup>
-    </div>
+    </section>
   );
 };
 

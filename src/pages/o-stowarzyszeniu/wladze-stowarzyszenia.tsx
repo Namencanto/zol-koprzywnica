@@ -4,9 +4,48 @@ import Image from "next/image";
 import Footer from "src/components/Footer";
 import CompanyImage from "../../../public/images/slider-3.jpg";
 import Link from "next/link";
+import Head from "next/head";
+import { contactData } from "src/static/contactData";
 const About: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>
+          Władze Stowarzyszenia | Zakład Opiekuńczo-Leczniczy w Koprzywnicy
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Poznaj władze Stowarzyszenia na Rzecz Osób z Chorobą Alzheimera - dowiedz się, kto stoi na czele organizacji i jakie są cele i działania zarządu."
+        />
+        <meta
+          name="keywords"
+          content="Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera, Stowarzyszenie, władze, zarząd, choroba Alzheimera, cele, działania, Zakład opiekuńczo-leczniczy w Koprzywnicy, Koprzywnica."
+        />
+
+        <meta name="author" content={contactData.author} />
+        <meta name="robots" content="index, follow" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="./o-stowarzyszeniu/wladze-stowarzyszenia"
+        />
+
+        <meta
+          property="og:image"
+          content="../../../public/images/slider-3.jpg"
+        />
+        <meta
+          name="twitter:card"
+          content="../../../public/images/slider-3.jpg"
+        />
+        <meta
+          name="twitter:image"
+          content="../../../public/images/slider-3.jpg"
+        />
+      </Head>
+
       <Navbar />
       <div className="relative">
         <Image
@@ -21,23 +60,23 @@ const About: React.FC = () => {
             filter: "brightness(70%)",
           }}
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-          <h1 className="text-7xl md:text-7xl lg:text-8xl font-bold text-white mb-8">
+        <div className="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8">
             Władze Stowarzyszenia
           </h1>
-          <p className="text-gray-100 text-2xl font-medium">
+          <p className="text-gray-100 text-xl sm:text-2xl font-medium">
             <Link legacyBehavior href="/">
-              <a className="text-primary transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
+              <a className="text-gray-100 transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
                 Strona Główna
               </a>
             </Link>
-            <span className="mx-4 text-gray-300">&gt;</span>
+            <span className="mx-2 sm:mx-4 text-gray-300">&gt;</span>
             <Link legacyBehavior href="/o-stowarzyszeniu">
-              <a className="text-primary transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
+              <a className="text-gray-100 transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
                 O Stowarzyszeniu
               </a>
             </Link>
-            <span className="mx-4 text-gray-300">&gt;</span>
+            <span className="mx-2 sm:mx-4 text-gray-300">&gt;</span>
             <span className="px-2 py-1 rounded text-btn-primary">
               Władze Stowarzyszenia
             </span>

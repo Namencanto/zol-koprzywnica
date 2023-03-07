@@ -4,10 +4,37 @@ import Image from "next/image";
 import Footer from "src/components/Footer";
 import CompanyImage from "../../../public/images/zaklad.jpg";
 import Link from "next/link";
+import Head from "next/head";
+import { contactData } from "src/static/contactData";
 
 const About: React.FC = () => {
   return (
     <>
+      <Head>
+        <title>
+          O Stowarzyszeniu | Zakład Opiekuńczo-Leczniczy w Koprzywnicy
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera z inicjatywy pracowników Niepublicznego Zakładu Opieki Zdrowotnej “MEDYK” w Koprzywnicy to organizacja, która działa na rzecz poprawy jakości życia osób cierpiących na chorobę Alzheimera oraz ich rodzin. Na naszej podstronie opisujemy nasze doświadczenia oraz specjalistyczną ofertę skierowaną do pacjentów z chorobą Alzheimera i innymi chorobami neurologicznymi. Zapraszamy do zapoznania się z naszą działalnością i ofertą usług."
+        />
+        <meta
+          name="keywords"
+          content="Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera, choroba Alzheimera, opieka nad osobami z chorobą Alzheimera, Niepubliczny Zakład Opieki Zdrowotnej, MEDYK, Koprzywnica, pomoc dla rodzin osób z chorobą Alzheimera."
+        />
+
+        <meta name="author" content={contactData.author} />
+        <meta name="robots" content="index, follow" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="./o-stowarzyszeniu" />
+
+        <meta property="og:image" content="../../public/images/zaklad.jpg" />
+        <meta name="twitter:card" content="../../public/images/zaklad.jpg" />
+        <meta name="twitter:image" content="../../public/images/zaklad.jpg" />
+      </Head>
+
       <Navbar />
       <div className="relative">
         <Image
@@ -22,17 +49,17 @@ const About: React.FC = () => {
             filter: "brightness(70%)",
           }}
         />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-          <h1 className="text-7xl md:text-7xl lg:text-8xl font-bold text-white mb-8">
+        <div className="w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8">
             O Stowarzyszeniu
           </h1>
-          <p className="text-gray-100 text-2xl font-medium">
+          <p className="text-gray-100 text-xl sm:text-2xl font-medium">
             <Link legacyBehavior href="/">
               <a className="text-primary transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
                 Strona Główna
               </a>
             </Link>
-            <span className="mx-4 text-gray-300">&gt;</span>
+            <span className="mx-2 sm:mx-4 text-gray-300">&gt;</span>
             <span className="px-2 py-1 rounded text-btn-primary">
               O Stowarzyszeniu
             </span>
