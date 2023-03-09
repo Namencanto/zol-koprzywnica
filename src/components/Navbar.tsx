@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useState, useContext } from "react";
-import NavLogo from "@/images/navLogo.png";
+import NavLogo from "@/images/NavLogo.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
 

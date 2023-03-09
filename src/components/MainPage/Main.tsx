@@ -75,9 +75,11 @@ const Main = () => {
           const currentSlide = document.querySelector(
             `.swiper-slide[data-swiper-slide-index="${currentSlideIndex}"]`
           );
-          const currentImage = currentSlide?.querySelector("img")!;
-          const altText = currentImage?.alt;
-          setCurrentAlt(altText);
+          const currentImage = currentSlide?.querySelector("img");
+          if (currentImage) {
+            const altText = currentImage.alt;
+            setCurrentAlt(altText);
+          }
         }}
         className="w-full sm:h-[40rem] h-[20rem]"
         aria-controls="swiper-navigation"

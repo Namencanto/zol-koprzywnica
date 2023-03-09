@@ -93,12 +93,12 @@ import { createContext, useState, useEffect } from "react";
 
 interface ThemeContextType {
   theme: "dark" | "light";
-  setTheme: (theme: string) => void;
+  setTheme: (theme: "dark" | "light") => void;
 }
 
 const ThemeContext = createContext<ThemeContextType>({
   theme: "light",
-  setTheme: () => {},
+  setTheme: (theme: "dark" | "light") => {},
 });
 
 interface ThemeProviderProps {

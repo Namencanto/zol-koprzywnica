@@ -7,17 +7,17 @@
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
+    // "plugin:@typescript-eslint/recommended",
     "next/core-web-vitals"
   ],
   "plugins": [
     "react",
     "react-hooks",
     "jsx-a11y",
-    "import",
-    "@typescript-eslint"
+    "import"
+    // "@typescript-eslint"
   ],
-  "parser": "@typescript-eslint/parser",
+  // "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -53,8 +53,8 @@
           "some": ["nesting", "id"]
         }
       }
-    ],
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    ]
+    // "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "settings": {
     "react": {

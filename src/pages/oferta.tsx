@@ -135,7 +135,7 @@ const Offer: FunctionComponent = () => {
               </div>
             </section>
             {activeService && (
-              <div
+              <section
                 role="region"
                 aria-labelledby="modal-title"
                 className="overflow-auto fixed top-0 left-0 w-full h-full z-50 flex justify-center items-center bg-gray-800 bg-opacity-75"
@@ -154,7 +154,8 @@ const Offer: FunctionComponent = () => {
               >
                 <div
                   aria-modal="true"
-                  className="bg-background-secondary relative rounded-lg shadow-custom-lg p-8 max-w-screen-md"
+                  className="bg-background-secondary relative rounded-lg shadow-custom-lg p-8 max-w-screen-sm mx-4 my-8"
+                  style={{ maxHeight: "calc(100vh - 16px)", overflowY: "auto" }}
                 >
                   <div className="text-center">
                     <h3
@@ -198,15 +199,17 @@ const Offer: FunctionComponent = () => {
                         )
                       )}
                   </div>
-                  <FaTimes
+                  <button
                     aria-label="Zamknij okno"
                     tabIndex={0}
                     role="button"
-                    className="absolute cursor-pointer top-0 right-0 mt-4 mr-4 text-text-gray-500 hover:text-text-gray-700"
+                    className="absolute top-0 right-0 mt-4 mr-4 p-2 text-text-gray-500 hover:text-text-gray-700"
                     onClick={() => setActiveService(null)}
-                  />
+                  >
+                    <FaTimes />
+                  </button>
                 </div>
-              </div>
+              </section>
             )}
           </div>
         </section>
