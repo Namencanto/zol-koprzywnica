@@ -1,11 +1,9 @@
 import Link from "next/link";
-import React, { useEffect, useState, useRef, useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import NavLogo from "@/images/navLogo.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import EnglishButton from "./languagesButtons/EnglishButton";
-import GermanButton from "./languagesButtons/GermanButton";
-import PolishButton from "./languagesButtons/PolishButton";
+
 import { ThemeContext } from "../../src/context/themeContext";
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
@@ -13,6 +11,7 @@ const Navbar = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -39,8 +38,6 @@ const Navbar = () => {
 
   const isActiveLink = (href: string) => {
     if (typeof window !== "undefined") {
-      // Your code that references the window object goes here
-
       return (
         router.pathname === href ||
         (href === "#kontakt" && window!.location.hash === href)
@@ -88,12 +85,26 @@ const Navbar = () => {
       </div>
 
       <input
-        onClick={toggleDropdownClose}
-        className=" menu-btn hidden"
+        checked={isMobileMenuOpen}
+        onClick={() => {
+          toggleDropdownClose();
+          setIsMobileMenuOpen(!isMobileMenuOpen);
+        }}
+        className="menu-btn hidden"
         type="checkbox"
         id="menu-btn"
       />
       <label
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            toggleDropdownClose();
+            setIsMobileMenuOpen(!isMobileMenuOpen);
+          }
+        }}
+        role="button"
+        aria-label="Menu"
+        aria-expanded={isMobileMenuOpen ? "true" : "false"}
+        tabIndex={0}
         className="menu-icon block cursor-pointer xl:hidden sm:px-6 py-4 pr-4 relative select-none"
         htmlFor="menu-btn"
         style={{ WebkitTapHighlightColor: "transparent" }}
@@ -113,7 +124,10 @@ const Navbar = () => {
           </Link>
         </li>
         <li
-          className={`border-t xl:border-none relative m-auto  ${
+          role="menuitem"
+          aria-haspopup="true"
+          aria-expanded={isDropdownOpen}
+          className={`border-t xl:border-none relative m-auto flex px-4 py-3 items-center hover:text-primary ${
             isActiveLink(
               "/o-stowarzyszeniu" ||
                 "/o-stowarzyszeniu/sponsorzy-i-darczyncy" ||
@@ -122,20 +136,21 @@ const Navbar = () => {
               ? "text-primary"
               : "text-text-gray-500"
           }`}
+          onClick={toggleDropdown}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              toggleDropdown();
+            }
+          }}
+          tabIndex={0}
+          onMouseLeave={toggleDropdownClose}
         >
-          <button
-            aria-haspopup="true"
-            className="flex px-4 py-3 items-center justify-center hover:text-primary"
-            onClick={toggleDropdown}
-            onMouseLeave={toggleDropdownClose}
-          >
-            <span className="text-xl mr-2 ">Stowarzyszenie</span>
-            {isDropdownOpen ? (
-              <FaChevronUp className="text-primary" />
-            ) : (
-              <FaChevronDown className="text-text-gray-500" />
-            )}
-          </button>
+          <span className="text-xl mr-2 ">Stowarzyszenie</span>
+          {isDropdownOpen ? (
+            <FaChevronUp className="text-primary" />
+          ) : (
+            <FaChevronDown className="text-text-gray-500" />
+          )}
           {isDropdownOpen && (
             <ul
               onMouseEnter={toggleDropdownOpen}
@@ -146,6 +161,7 @@ const Navbar = () => {
                 <li key={link.href}>
                   <Link legacyBehavior href={link.href}>
                     <a
+                      href="replace"
                       className={`block py-2 px-4 hover:bg-background-tertiary hover:text-primary ${
                         isActiveLink(link.href)
                           ? "text-primary font-semibold"
@@ -205,21 +221,39 @@ const Navbar = () => {
         </li>
         {theme === "dark" ? (
           <li
+            tabIndex={0}
+            role="button"
+            aria-label="Włącz jasny motyw strony"
+            title="Włącz jasny motyw strony"
             onClick={() => {
               setTheme("light");
             }}
-            className="border-t xl:border-0 block xl:inline-block pr-4 pl-4 xl:pr-6  py-3 no-underline text-grey-darkest"
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                setTheme("light");
+              }
+            }}
+            className="border-t xl:border-0 block xl:inline-block pr-4 pl-4 xl:pr-6 py-3 no-underline text-grey-darkest"
           >
-            <MdOutlineLightMode size={25} />
+            <MdOutlineLightMode className="text-text-gray-500" size={25} />
           </li>
         ) : theme === "light" ? (
           <li
+            tabIndex={0}
+            role="button"
+            aria-label="Włącz ciemny motyw strony"
+            title="Włącz ciemny motyw strony"
             onClick={() => {
               setTheme("dark");
             }}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                setTheme("light");
+              }
+            }}
             className="border-t xl:border-0 block xl:inline-block pr-4 pl-4 xl:pr-6 py-3 no-underline"
           >
-            <MdOutlineDarkMode size={25} />
+            <MdOutlineDarkMode className="text-text-gray-500" size={25} />
           </li>
         ) : null}
       </ul>

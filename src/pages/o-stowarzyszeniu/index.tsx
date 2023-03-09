@@ -1,11 +1,10 @@
-import React, { useMemo } from "react";
+import React from "react";
 import Navbar from "src/components/Navbar";
 import Image from "next/image";
 import Footer from "src/components/Footer";
 import CompanyImage from "../../../public/images/zaklad.jpg";
 import Link from "next/link";
 import Head from "next/head";
-import { contactData } from "src/static/contactData";
 
 const About: React.FC = () => {
   return (
@@ -14,7 +13,6 @@ const About: React.FC = () => {
         <title>
           O Stowarzyszeniu | Zakład Opiekuńczo-Leczniczy w Koprzywnicy
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
           content="Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera z inicjatywy pracowników Niepublicznego Zakładu Opieki Zdrowotnej “MEDYK” w Koprzywnicy to organizacja, która działa na rzecz poprawy jakości życia osób cierpiących na chorobę Alzheimera oraz ich rodzin. Na naszej podstronie opisujemy nasze doświadczenia oraz specjalistyczną ofertę skierowaną do pacjentów z chorobą Alzheimera i innymi chorobami neurologicznymi. Zapraszamy do zapoznania się z naszą działalnością i ofertą usług."
@@ -23,9 +21,6 @@ const About: React.FC = () => {
           name="keywords"
           content="Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera, choroba Alzheimera, opieka nad osobami z chorobą Alzheimera, Niepubliczny Zakład Opieki Zdrowotnej, MEDYK, Koprzywnica, pomoc dla rodzin osób z chorobą Alzheimera."
         />
-
-        <meta name="author" content={contactData.author} />
-        <meta name="robots" content="index, follow" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./o-stowarzyszeniu" />
@@ -54,8 +49,11 @@ const About: React.FC = () => {
             O Stowarzyszeniu
           </h1>
           <p className="text-gray-100 text-xl sm:text-2xl font-medium">
-            <Link legacyBehavior href="/">
-              <a className="text-primary transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
+            <Link legacyBehavior href="/" passHref>
+              <a
+                href="replace"
+                className="text-gray-100 transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary"
+              >
                 Strona Główna
               </a>
             </Link>

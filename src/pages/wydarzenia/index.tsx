@@ -4,10 +4,9 @@ import { useState, useContext } from "react";
 import Image from "next/image";
 import Footer from "src/components/Footer";
 import Link from "next/link";
-import { Events as EventsProps, Event } from "src/static/types";
+import { Events as EventsProps } from "src/static/types";
 import { CSSTransition } from "react-transition-group";
 import { GetStaticProps } from "next";
-import { contactData } from "src/static/contactData";
 import { ThemeContext } from "src/context/themeContext";
 import { generateFriendlyLink } from "src/components/WydarzeniaPageComponents/generateFriendlyLink";
 const Events: React.FC<EventsProps> = ({ allEvents }) => {
@@ -31,9 +30,7 @@ const Events: React.FC<EventsProps> = ({ allEvents }) => {
           name="keywords"
           content="zakład opiekuńczo-leczniczy, wydarzenia, historia, opieka nad osobami starszymi"
         />
-        <meta name="author" content={contactData.author} />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
         <meta
           property="og:title"
           content="Wydarzenia na przestrzeni lat zakładu opiekuńczo-leczniczego"

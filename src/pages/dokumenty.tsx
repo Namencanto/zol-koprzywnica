@@ -110,6 +110,8 @@ const DocumentDownload = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
               {documents.map((document, index) => (
                 <Link
+                  aria-label={`Kliknij by pobrać dokument ${document.name}`}
+                  title={`Kliknij by pobrać dokument ${document.name}`}
                   key={index}
                   href={document.file}
                   download={document.fileName}
@@ -118,6 +120,7 @@ const DocumentDownload = () => {
                   rel="noopener noreferrer"
                 >
                   <div
+                    role="button"
                     className="bg-background-secondary rounded-lg shadow-custom-lg p-8 flex flex-col justify-center items-center"
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave()}

@@ -10,7 +10,6 @@ import { Events } from "src/static/types";
 import { Button } from "@mui/material";
 import Link from "next/link";
 import Head from "next/head";
-import { contactData } from "src/static/contactData";
 import { generateFriendlyLink } from "src/components/WydarzeniaPageComponents/generateFriendlyLink";
 
 const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
@@ -37,9 +36,6 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
           name="keywords"
           content="zakład opiekuńczo-leczniczy, wydarzenie, historia, opieka nad osobami starszymi, alzheimer,"
         />
-        <meta name="author" content={contactData.author} />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./o-stowarzyszeniu" />
@@ -63,17 +59,20 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
           }}
         />
       ) : null}
-      <div className="max-w-[1240px] pt-12 mx-auto">
-        <h1 className="text-5xl font-normal mb-6  text-center">
+      <div className="px-6 xl:px-0 max-w-[1240px] pt-12 mx-auto">
+        <h1 className="text-3xl sm:text-5xl font-normal mb-6 text-center">
           {event[0].title}
         </h1>
-        <time className="text-2xl text-primary" dateTime={event[0].date}>
+        <time
+          className="text-xl sm:text-2xl text-primary"
+          dateTime={event[0].date}
+        >
           {event[0].date}
         </time>
         {/* Long component case */}
         {isLongComponent ? (
           <div className="flex flex-col md:flex-row items-center pt-12 mb-10">
-            <div className="w-full pl-6 mt-6 md:mt-0">
+            <div className="w-full sm:pl-6 pl-0 mt-6 md:mt-0">
               {event[0].description.map((text, i) => {
                 if (i % 3 === 0)
                   howManyImagesRenderedCounter =
@@ -83,7 +82,7 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
                     {i % 3 === 0 &&
                       images &&
                       images[howManyImagesRenderedCounter] && (
-                        <div className="relative w-1/2 m-auto h-auto my-8">
+                        <div className="relative sm:w-1/2 w-1/1 m-auto h-auto my-8">
                           <Image
                             className="w-full h-auto border-2 border-primary shadow-lg"
                             src={images[howManyImagesRenderedCounter]}
@@ -130,19 +129,29 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
             </div>
           </div>
         )}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
-          {images && images[2]
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-10">
+          {images
             ? images!.map((image, i) => (
                 <div
+                  aria-label="Kliknij by wyświetlić obraz na całej stronie"
+                  role="button"
                   key={i}
-                  className="relative h-48 md:h-64 cursor-pointer shadow-lg transform transition duration-500 ease-in-out hover:scale-[1.025]"
-                >
-                  <Image
-                    onClick={(e: React.SyntheticEvent<HTMLImageElement>) => {
+                  tabIndex={0}
+                  className="relative h-48 md:h-64 cursor-pointer shadow-lg transform transition duration-500 ease-in-out hover:scale-[1.025] focus:scale-[1.025] outline-none"
+                  onClick={(e) => {
+                    const element = e.target as HTMLImageElement;
+                    setDisplayImage(true);
+                    setSelectedImage(+element.id);
+                  }}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
                       const element = e.target as HTMLImageElement;
                       setDisplayImage(true);
                       setSelectedImage(+element.id);
-                    }}
+                    }
+                  }}
+                >
+                  <Image
                     id={i.toString()}
                     src={image}
                     alt={`Zdjęcie ${i + 1} galerii z wydarzenia ${
@@ -212,15 +221,6 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
   const eventsList = Object.values(events).flatMap(
     (eventsInYear) => eventsInYear
   );
-
-  // to convert friendly link to original text
-  function slugToText(slug: string) {
-    const text = slug
-      .replace(/-/g, " ")
-      .replace(/\b\w/g, (char: string) => char.toUpperCase());
-
-    return text;
-  }
 
   const event = eventsList.filter(
     (event) => generateFriendlyLink(event?.title) === title

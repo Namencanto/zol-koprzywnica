@@ -5,7 +5,6 @@ import Footer from "src/components/Footer";
 import CompanyImage from "../../../public/images/slider-2.jpg";
 import Link from "next/link";
 import Head from "next/head";
-import { contactData } from "src/static/contactData";
 const About: React.FC = () => {
   return (
     <>
@@ -13,7 +12,6 @@ const About: React.FC = () => {
         <title>
           Sponsorzy i darczyńcy | Zakład Opiekuńczo-Leczniczy w Koprzywnicy
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
           content="Zobacz listę sponsorów i darczyńców, którzy wspierają działalność Stowarzyszenia na Rzecz Osób z Chorobą Alzheimera z inicjatywy pracowników Niepublicznego Zakładu Opieki Zdrowotnej “MEDYK” w Koprzywnicy."
@@ -22,9 +20,6 @@ const About: React.FC = () => {
           name="keywords"
           content="Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera, Stowarzyszenie, Osoby z Chorobą Alzheimera, sponsorzy, darczyńcy, medyk, Koprzywnica, Zakład opiekuńczo-leczniczy w koprzywnicy."
         />
-
-        <meta name="author" content={contactData.author} />
-        <meta name="robots" content="index, follow" />
 
         <meta property="og:type" content="website" />
         <meta
@@ -66,13 +61,19 @@ const About: React.FC = () => {
           </h1>
           <p className="text-gray-100 text-xl sm:text-2xl font-medium">
             <Link legacyBehavior href="/">
-              <a className="text-gray-100 transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
+              <a
+                href="replace"
+                className="text-gray-100 transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary"
+              >
                 Strona Główna
               </a>
             </Link>
             <span className="mx-2 sm:mx-4 text-gray-300">&gt;</span>
             <Link legacyBehavior href="/o-stowarzyszeniu">
-              <a className="text-gray-100 transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary">
+              <a
+                href="replace"
+                className="text-gray-100 transition-all duration-300 hover:text-primary-light px-2 py-1 rounded hover:text-btn-primary"
+              >
                 O Stowarzyszeniu
               </a>
             </Link>

@@ -33,42 +33,45 @@ const CheckOthers: React.FC<CurrentEventProps> = ({
   // Counter for narrow down number of event to max 3
   let howManyRenderedCounter = 0;
   return (
-    <div className=" max-w-[1240px] m-auto h-[auto] mt-24">
-      <h2 className="text-3xl border-b-2 border-gray-200 pb-2 font-normal">
-        Sprawdź inne wydarzenia
-      </h2>
-      <div className="p-2 pt-8 flex justify-around">
-        {events.map((event: Event, i) => {
-          if (howManyRenderedCounter < 3 && event.title !== currentTitle) {
-            howManyRenderedCounter = howManyRenderedCounter + 1;
-            return (
-              <Link
-                className="w-1/3 px-2"
-                key={i}
-                href={`/wydarzenia/${generateFriendlyLink(event.title)}`}
-                onClick={shuffleEvents}
-              >
-                <div className="hover:underline">
-                  <Image
-                    src={event.images ? event.images![0] : EmptyPhotos}
-                    alt={
-                      event.images
-                        ? `Zdjęcie opisujące wydarzenie ${event.title}`
-                        : `Brak dostępnego zdjęcia dla wydarzenia ${event.title}`
-                    }
-                    className="w-full h-48 object-cover border-2 border-gray-300"
-                    height={192}
-                    width={400}
-                  />
-                  <h3>{event.title}</h3>
-                </div>
-                <p>{event.date}</p>
-              </Link>
-            );
-          }
-        })}
-      </div>
-    </div>
+    <section className="max-w-[1240px] mx-auto mt-24">
+      <header>
+        <h2 className="text-3xl border-b-2 border-gray-200 pb-2 font-normal">
+          Sprawdź inne wydarzenia
+        </h2>
+      </header>
+      <main className="py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {events.map((event: Event, i) => {
+            if (howManyRenderedCounter < 3 && event.title !== currentTitle) {
+              howManyRenderedCounter = howManyRenderedCounter + 1;
+              return (
+                <article key={i} className="hover:underline">
+                  <Link
+                    aria-label={`Kliknij aby sprawdzić wydarzenie pod tytułem ${event.title}`}
+                    href={`/wydarzenia/${generateFriendlyLink(event.title)}`}
+                    onClick={shuffleEvents}
+                  >
+                    <Image
+                      src={event.images ? event.images![0] : EmptyPhotos}
+                      alt={
+                        event.images
+                          ? `Zdjęcie opisujące wydarzenie ${event.title}`
+                          : `Brak dostępnego zdjęcia dla wydarzenia ${event.title}`
+                      }
+                      className="w-full h-48 object-cover border-2 border-gray-300"
+                      height={192}
+                      width={400}
+                    />
+                    <h3 className="text-lg mt-2">{event.title}</h3>
+                  </Link>
+                  <p className="text-sm">{event.date}</p>
+                </article>
+              );
+            }
+          })}
+        </div>
+      </main>
+    </section>
   );
 };
 

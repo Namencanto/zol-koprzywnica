@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import Link from "next/link";
-import { useState, useEffect, useCallback, useContext } from "react";
+import React, { useState, useEffect, useCallback, useContext } from "react";
 import { contactData } from "src/static/contactData";
 import { ThemeContext } from "src/context/themeContext";
 interface ContactFormData {
@@ -149,8 +149,6 @@ const Contact = () => {
     }
 
     const errors = validate(formData);
-    console.log(errors);
-    console.log(Object.keys(errors).length);
     if (Object.keys(errors).length > 0) {
       setErrors(errors);
     } else {
@@ -163,7 +161,7 @@ const Contact = () => {
           message: "Wiadomość została wysłana pomyślnie",
         });
       } catch (err) {
-        console.log(err);
+        console.error("Błąd wysłania wiadomości", err);
         setServerMessage({
           type: "error",
           message: "Coś poszło nie tak...",
@@ -321,7 +319,7 @@ const Contact = () => {
                 <h1 className="font-bold uppercase text-4xl my-4 text-text-gray-200 break-words">
                   Skontaktuj się z nami
                 </h1>
-                <p className="text-text-gray-400">
+                <p className="text-text-gray-300">
                   Zadzwoń do nas lub napisz wiadomość poprzez formularz lub
                   e-mail
                 </p>
@@ -332,10 +330,10 @@ const Contact = () => {
                   </div>
                   <div className="flex flex-col">
                     <h2 className="text-2xl text-text-gray-200">Nasze biuro</h2>
-                    <p className="text-text-gray-400">
+                    <p className="text-text-gray-300">
                       {contactData.location[0]}
                     </p>
-                    <p className="text-text-gray-400">
+                    <p className="text-text-gray-300">
                       {contactData.location[1]}
                     </p>
                   </div>
@@ -355,7 +353,7 @@ const Contact = () => {
                         href={`tel:${contactData.landLineNumbers[0]}`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
-                        className="text-text-gray-400"
+                        className="text-text-gray-300"
                       >
                         {contactData.landLineNumbers[0]}
                       </Link>
@@ -366,7 +364,7 @@ const Contact = () => {
                         href={`tel:${contactData.landLineNumbers[1]}`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
-                        className="text-text-gray-400"
+                        className="text-text-gray-300"
                       >
                         {contactData.landLineNumbers[1]}
                       </Link>
@@ -377,7 +375,7 @@ const Contact = () => {
                         href={`tel:${contactData.phoneNumber}`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
-                        className="text-text-gray-400"
+                        className="text-text-gray-300"
                       >
                         {contactData.phoneNumber}
                       </Link>
@@ -388,7 +386,7 @@ const Contact = () => {
                         href={`mailto:${contactData.email}`}
                         aria-label="Our email"
                         title="Our email"
-                        className="text-text-gray-400	"
+                        className="text-text-gray-300"
                       >
                         {contactData.email}
                       </Link>

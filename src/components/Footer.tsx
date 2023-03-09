@@ -20,14 +20,10 @@ const Footer = () => {
               <p className="text-sm text-gray-200 ">
                 Nasz zakład opiekuńczo-leczniczy oferuje kompleksową opiekę
                 medyczną dla pacjentów starszych z chorobą Alzheimera,
-                przewlekłymi chorobami i innymi formami otępienia.
-              </p>
-              <p className="text-sm text-gray-200 mt-2">
-                Zapewniamy wysokiej jakości usługi medyczne, w tym diagnostykę,
-                terapię i rehabilitację, zawsze z uwzględnieniem bezpieczeństwa
-                i komfortu naszych pacjentów. Nasz doświadczony zespół
-                specjalistów zapewnia indywidualne podejście do każdego
-                pacjenta, dbając o poprawę jakości ich życia i zdrowia.
+                przewlekłymi chorobami i innymi formami otępienia. Nasz
+                doświadczony zespół specjalistów zapewnia indywidualne podejście
+                do każdego pacjenta, dbając o poprawę jakości ich życia i
+                zdrowia.
               </p>
             </div>
           </div>

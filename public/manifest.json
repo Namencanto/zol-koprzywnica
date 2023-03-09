@@ -1,0 +1,13 @@
+{
+  "name": "Zakład opiekuńczo-leczniczy w koprzywnicy",
+  "short_name": "ZOL Koprzywnica",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#134944",
+  "description": "Zakład opiekuńczo-leczniczy w Koprzywnicy - oferujemy kompleksowe usługi opiekuńcze i medyczne dla osób starszych i niepełnosprawnych. Nasza placówka zapewnia wysoką jakość opieki w komfortowych warunkach. Zapraszamy do zapoznania się z naszą ofertą.",
+  "icons": [
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

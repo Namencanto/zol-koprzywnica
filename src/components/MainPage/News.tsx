@@ -30,6 +30,11 @@ const News: React.FC<Events> = ({ allEvents }) => {
                     }`}
                     src={allEvents[allEvents.length - 1].images![0]}
                     className="absolute z-0 object-cover w-full h-72 md:h-full rounded-md"
+                    loading="lazy"
+                    sizes="
+                    (min-width: 768px) 50vw,
+                    33.33vw
+                  "
                   />
                 ) : null}
                 <div className="absolute gradient w-full h-72 md:h-full rounded-md z-10"></div>

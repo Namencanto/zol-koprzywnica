@@ -10,14 +10,11 @@ import Information from "src/components/MainPage/Information";
 import Steps from "src/components/MainPage/Steps";
 import { GetStaticProps } from "next";
 import { Events } from "src/static/types";
-import { contactData } from "src/static/contactData";
 const Home: React.FC<Events> = ({ allEvents }) => {
   return (
     <>
       <Head>
-        <title>Zakład Opiekuńczo-Leczniczy w Koprzywnicy </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Zakład Opiekuńczo-Leczniczy w Koprzywnicy</title>
 
         <meta
           name="description"
@@ -27,9 +24,6 @@ const Home: React.FC<Events> = ({ allEvents }) => {
           name="keywords"
           content="Zakład opiekuńczo-leczniczy, Zakład opiekuńczo-leczniczy w koprzywnicy Alzheimer, Koprzywnica, stowarzyszenie, Fizjoterapia, Hipoterapia, Rehabilitacja,"
         />
-
-        <meta name="author" content={contactData.author} />
-        <meta name="robots" content="index, follow" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./" />
@@ -42,9 +36,7 @@ const Home: React.FC<Events> = ({ allEvents }) => {
       <Navbar />
       <Main />
       <News allEvents={allEvents} />
-      {/* <About /> */}
       <Faq />
-
       <Information />
       <Steps />
       <Contact />
