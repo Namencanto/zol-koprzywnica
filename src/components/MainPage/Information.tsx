@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Button } from "@mui/material";
 import { ThemeContext } from "src/context/themeContext";
+import Link from "next/link";
 const Information = () => {
   const { theme } = useContext(ThemeContext);
   const infoList = [
@@ -36,6 +37,7 @@ const Information = () => {
       <div className="flex justify-left mb-8 sm:flex-row flex-col">
         {infoList.map((info) => (
           <Button
+            aria-label={info.title}
             style={{
               backgroundColor:
                 activeInfo === info.id && theme === "light"
@@ -47,10 +49,10 @@ const Information = () => {
             }}
             variant="contained"
             key={info.id}
-            className={`w-full md:w-auto px-8 py-3 md:px-12 md:py-4 rounded-md flex-1 ${
+            className={`!w-full !md:w-auto !px-8 !py-3 !md:px-12 !md:py-4 !rounded-md !flex-1 ${
               activeInfo === info.id
-                ? "bg-primary text-white font-bold"
-                : "bg-transparent text-primary font-medium"
+                ? "!text-gray-100 !font-bold"
+                : "bg-transparent !text-primary !font-medium"
             } mr-4`}
             onClick={() => handleButtonClick(info.id)}
           >
@@ -77,24 +79,17 @@ const Information = () => {
         </CSSTransition>
       </TransitionGroup>
       <div className="absolute bottom-0 left-0 right-0 flex flex-row justify-center md:justify-end m-4 space-x-4 mb-4 md:mb-0">
-        <Button
-          style={{
-            backgroundColor: theme === "light" ? "#0ba597" : "#333",
-          }}
-          variant="contained"
-          className="w-1/2 md:w-auto px-8 py-3 md:px-12 md:py-4 bg-btn-primary text-white rounded-md "
-        >
-          Dowiedz się więcej
-        </Button>
-        <Button
-          style={{
-            backgroundColor: theme === "light" ? "#0ba597" : "#333",
-          }}
-          variant="contained"
-          className="w-1/2 md:w-auto px-8 py-3 md:px-12 md:py-4 bg-btn-primary text-white rounded-md "
-        >
-          Zadzwoń
-        </Button>
+        <Link aria-label="Skontaktuj się z nami" href="#kontakt">
+          <Button
+            className=" !md:w-auto !px-8 !py-3 !md:px-12 !md:py-4 !text-white !rounded-md "
+            style={{
+              backgroundColor: theme === "light" ? "#0ba597" : "#333",
+            }}
+            variant="contained"
+          >
+            Skontaktuj się z nami
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -52,8 +52,8 @@ const Main = () => {
       role="region"
       aria-label={`Przewijana galeria zdjęć ${currentAlt}`}
       className="relative"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseOverCapture={handleMouseEnter}
+      onMouseDownCapture={handleMouseLeave}
       aria-live="polite"
       aria-atomic="true"
     >
@@ -97,7 +97,7 @@ const Main = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            loading="lazy"
+            priority={true}
             fill
             src={Slider2}
             alt="Widok na fasadę zakładu opiekuńczo-leczniczego"
@@ -107,7 +107,7 @@ const Main = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            loading="lazy"
+            priority={true}
             fill
             src={Slider3}
             alt="Widok na zakład opiekuńczo-leczniczy od tyłu"

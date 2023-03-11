@@ -1,6 +1,6 @@
 const Location = () => {
   return (
-    <div className="bg-background-tertiary pt-2">
+    <div id="location" className="bg-background-tertiary pt-2">
       <div className="max-w-[1240px] m-auto h-[auto] py-24 px-4">
         <h2 className="text-3xl border-b-2 border-gray-200 pb-2 font-normal">
           Znajdź nas na mapach google

@@ -4,22 +4,24 @@ import { Events } from "src/static/types";
 import Link from "next/link";
 import { generateFriendlyLink } from "../WydarzeniaPageComponents/generateFriendlyLink";
 const News: React.FC<Events> = ({ allEvents }) => {
+  console.log(allEvents[allEvents.length - 1].images![0]);
   return (
     <section className="px-4 bg-background-secondary py-24">
       <h2 className="max-w-[1240px] mx-auto px-2 text-3xl border-b-2 border-gray-200 pb-2 font-normal ">
         Aktualności i informacje
       </h2>
+
       <div className="max-w-[1240px] mx-auto p-2 pt-8">
-        <div className="max-w-screen-xl mx-auto p-4">
+        <div className="max-w-screen-xl mx-auto sm:p-4 p-0">
           <h2 className="text-4xl sm:text-5xl  font-bold mb-4 text-center text-primary">
             Ważne wydarzenia
           </h2>
-          <div className="flex flex-col md:flex-row -mx-1.5 p-4">
+          <div className="flex flex-col md:flex-row -mx-1.5 sm:p-4 p-0">
             <Link
               href={`wydarzenia/${generateFriendlyLink(
                 allEvents[allEvents.length - 1].title
               )}`}
-              className="h-72 md:h-auto w-full md:w-7/12 mx-1.5 mb-6 md:mb-0 group"
+              className="h-72 md:h-auto w-auto md:w-7/12 mx-1.5 mb-6 md:mb-0 group"
             >
               <div className="h-72 md:h-full relative">
                 {allEvents[allEvents.length - 1].images ? (
@@ -33,7 +35,7 @@ const News: React.FC<Events> = ({ allEvents }) => {
                     loading="lazy"
                     sizes="
                     (min-width: 768px) 50vw,
-                    33.33vw
+                   40w
                   "
                   />
                 ) : null}
@@ -42,7 +44,7 @@ const News: React.FC<Events> = ({ allEvents }) => {
                   <h3 className="font-bold text-white leading-tight sm:mb-1.5 group-hover:underline text-2xl md:text-3xl">
                     {allEvents[allEvents.length - 1].title}
                   </h3>
-                  <div className="text-xs text-white hidden sm:block">
+                  <div className="text-xs text-white  sm:block">
                     <div className="flex items-center">
                       <svg
                         aria-hidden="true"
@@ -51,7 +53,6 @@ const News: React.FC<Events> = ({ allEvents }) => {
                         data-icon="clock"
                         className="h-3 mr-1"
                         role="img"
-                        xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512"
                       >
                         <path
@@ -74,18 +75,19 @@ const News: React.FC<Events> = ({ allEvents }) => {
                     <Link
                       key={title}
                       href={`wydarzenia/${generateFriendlyLink(title)}`}
-                      className="flex sm:min-h-[31%] items-center group mb-3 pb-3 border-b"
+                      className="flex flex-col sm:flex-row items-center sm:min-h-[31%] group mb-3 pb-3 border-b"
                     >
                       {images !== undefined ? (
                         <Image
                           alt={`Zdjęcie opisujące wydarzenie ${title}`}
                           src={images[0]}
-                          width={96}
-                          height={96}
-                          className="rounded-md object-cover mr-3 h-24 w-24"
+                          width={220}
+                          height={180}
+                          className="rounded-md object-cover mr-3 sm:mr-4 sm:h-24 sm:w-24"
+                          loading="lazy"
                         />
                       ) : null}
-                      <div className="flex-1">
+                      <div className="flex-1 w-full">
                         <h3 className="font-bold text-lg leading-tight group-hover:underline mb-2">
                           {title}
                         </h3>

@@ -112,8 +112,11 @@ const Navbar = () => {
         <span className="navicon flex items-center relative"></span>
       </label>
 
-      <ul className="menu border-b xl:border-none flex justify-end list-reset m-0 w-full xl:w-auto">
-        <li className="border-t xl:border-none">
+      <ul
+        role="menu"
+        className="menu border-b xl:border-none flex justify-end list-reset m-0 w-full xl:w-auto"
+      >
+        <li role="presentation" className="border-t xl:border-none">
           <Link
             href="/"
             className={`hover:text-primary block xl:inline-block px-4 py-3 no-underline hover:text-grey-darker text-xl ${
@@ -158,7 +161,7 @@ const Navbar = () => {
               className="absolute top-full left-0 right-0 bg-background-secondary z-10 border border-text-gray-300 rounded-b-lg overflow-hidden"
             >
               {dropdownLinks.map((link) => (
-                <li key={link.href}>
+                <li role="presentation" key={link.href}>
                   <Link legacyBehavior href={link.href}>
                     <a
                       href="replace"
@@ -177,7 +180,7 @@ const Navbar = () => {
           )}
         </li>
 
-        <li className="border-t xl:border-none">
+        <li role="presentation" className="border-t xl:border-none">
           <Link
             href="/oferta/"
             className={`hover:text-primary block xl:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-xl ${
@@ -187,7 +190,7 @@ const Navbar = () => {
             Oferta
           </Link>
         </li>
-        <li className="border-t xl:border-none">
+        <li role="presentation" className="border-t xl:border-none">
           <Link
             href="/wydarzenia/"
             className={`hover:text-primary block xl:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-xl ${
@@ -199,7 +202,7 @@ const Navbar = () => {
             Aktualności
           </Link>
         </li>
-        <li className="border-t xl:border-none">
+        <li role="presentation" className="border-t xl:border-none">
           <Link
             href="/#kontakt"
             className={`hover:text-primary block xl:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-xl ${
@@ -209,7 +212,7 @@ const Navbar = () => {
             Kontakt
           </Link>
         </li>
-        <li className="border-t xl:border-none">
+        <li role="presentation" className="border-t xl:border-none">
           <Link
             href="/dokumenty"
             className={`hover:text-primary block xl:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-grey-darker text-xl ${

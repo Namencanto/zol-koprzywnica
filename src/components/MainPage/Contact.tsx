@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, Checkbox } from "@mui/material";
 import Link from "next/link";
 import React, { useState, useEffect, useCallback, useContext } from "react";
 import { contactData } from "src/static/contactData";
@@ -9,6 +9,7 @@ interface ContactFormData {
   email: string;
   phone: string;
   message: string;
+  checkbox: string;
 }
 
 const Contact = () => {
@@ -20,6 +21,7 @@ const Contact = () => {
     email: "",
     phone: "",
     message: "",
+    checkbox: "",
   });
   // To make sure that errors only appear when the user has interacted with the inputs
   const [touched, setTouched] = useState({
@@ -28,7 +30,15 @@ const Contact = () => {
     email: false,
     phone: false,
     message: false,
+    checkbox: false,
   });
+
+  // privacy policy checkbox
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(event.target.checked);
+  };
 
   const [errors, setErrors] = useState<Partial<ContactFormData>>({});
 
@@ -99,15 +109,23 @@ const Contact = () => {
         }
       }
 
+      if (touched.checkbox) {
+        if (!isChecked) {
+          errors.checkbox = "Zaakceptowanie polityki prywatności jest wymagane";
+        }
+      }
+
       return errors;
     },
-    [touched]
+    [touched, isChecked]
   );
+  console.log(errors);
   // Function for handling changes in input fields
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
+
     setFormData((prevState) => ({
       ...prevState,
       [name]: value,
@@ -140,7 +158,8 @@ const Contact = () => {
       !touched.firstName ||
       !touched.lastName ||
       !touched.phone ||
-      !touched.message
+      !touched.message ||
+      !touched.checkbox
     ) {
       return setServerMessage({
         type: "error",
@@ -149,8 +168,13 @@ const Contact = () => {
     }
 
     const errors = validate(formData);
+
     if (Object.keys(errors).length > 0) {
       setErrors(errors);
+      setServerMessage({
+        type: "error",
+        message: "",
+      });
     } else {
       setErrors({});
       // send form
@@ -260,7 +284,7 @@ const Contact = () => {
                         handleInputChange(e);
                       }}
                     />
-                    <p className="text-red-500 text-sm ml-2"> {errors.phone}</p>
+                    <p className="text-red-500 text-sm ml-2">{errors.phone}</p>
                   </div>
                 </div>
                 <div>
@@ -277,6 +301,38 @@ const Contact = () => {
                         handleInputChange(e);
                       }}
                     ></textarea>
+                    <Checkbox
+                      className="!text-[#07756c]"
+                      id="privacyPolicyCheckbox"
+                      checked={isChecked}
+                      color="primary"
+                      onChange={(e) => {
+                        setTouched((prevState) => ({
+                          ...prevState,
+                          checkbox: true,
+                        }));
+                        handleCheckboxChange(e);
+                      }}
+                    />
+                    <label
+                      htmlFor="privacyPolicyCheckbox"
+                      className="text-text-primary"
+                    >
+                      Akceptuję{" "}
+                      <Link
+                        href="/polityka-prywatnosci"
+                        className="underline"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        politykę prywatności
+                      </Link>{" "}
+                      i wyrażam zgodę na przetwarzanie moich danych osobowych
+                      zgodnie z nią.
+                    </label>
+                    <p className="text-red-500 text-sm ml-2">
+                      {errors.checkbox}
+                    </p>
                     <p className="text-red-500 text-sm ml-2">
                       {errors.message}
                     </p>
@@ -287,11 +343,10 @@ const Contact = () => {
                   <Button
                     type="submit"
                     variant="contained"
-                    color="primary"
-                    className={`uppercase text-sm font-bold tracking-wide text-text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline ${
+                    className={`!uppercase !text-sm !font-bold !tracking-wide !text-text-gray-100 !p-3 !rounded-lg !w-full !focus:outline-none !focus:shadow-outline ${
                       theme === "light"
-                        ? "bg-primary hover:bg-btn-primary-hover"
-                        : "bg-secondary hover:bg-[#3A3A3A]"
+                        ? "!bg-primary !hover:bg-btn-primary-hover"
+                        : "!bg-secondary !hover:bg-[#3A3A3A]"
                     }`}
                   >
                     Wyślij wiadomość
@@ -328,7 +383,11 @@ const Contact = () => {
                   <div className="flex flex-col">
                     <i className="fas fa-map-marker-alt pt-2 pr-2" />
                   </div>
-                  <div className="flex flex-col">
+                  <Link
+                    href="#location"
+                    className="flex flex-col"
+                    aria-label="Kliknij, aby przejść do lokalizacji naszego biura"
+                  >
                     <h2 className="text-2xl text-text-gray-200">Nasze biuro</h2>
                     <p className="text-text-gray-300">
                       {contactData.location[0]}
@@ -336,7 +395,7 @@ const Contact = () => {
                     <p className="text-text-gray-300">
                       {contactData.location[1]}
                     </p>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex my-4 w-1/1 lg:w-2/3">
@@ -384,8 +443,8 @@ const Contact = () => {
                       <p className="mr-1 text-text-gray-300">Email:</p>
                       <Link
                         href={`mailto:${contactData.email}`}
-                        aria-label="Our email"
-                        title="Our email"
+                        aria-label="Nasz email"
+                        title="Nasz email"
                         className="text-text-gray-300"
                       >
                         {contactData.email}

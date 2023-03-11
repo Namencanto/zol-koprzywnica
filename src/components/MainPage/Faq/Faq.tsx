@@ -132,7 +132,7 @@ const Faq = () => {
           </div>
           {showAll || (
             <Button
-              className="m-auto text-primary hover:bg-[#cccccc33]"
+              className="!m-auto !text-primary hover:!bg-[#cccccc33]"
               onClick={() => {
                 setShowAll(true);
               }}

@@ -167,7 +167,7 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
         <Link href="/wydarzenia">
           <Button
             aria-label="Powrót do wszystkich wydarzeń"
-            className="m-auto text-primary hover:bg-[#cccccc33]"
+            className="!m-auto !text-primary hover:!bg-[#cccccc33]"
           >
             Powrót
           </Button>
