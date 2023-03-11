@@ -196,6 +196,10 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
         "rgb(243 244 246)"
       );
       document.documentElement.style.setProperty(
+        "--text-gray-600",
+        "rgb(243 244 246)"
+      );
+      document.documentElement.style.setProperty(
         "--text-gray-800",
         "rgb(243 244 246)"
       );

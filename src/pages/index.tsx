@@ -10,12 +10,12 @@ import Information from "src/components/MainPage/Information";
 import Steps from "src/components/MainPage/Steps";
 import { GetStaticProps } from "next";
 import { Events } from "src/static/types";
+import Script from "next/script";
 const Home: React.FC<Events> = ({ allEvents }) => {
   return (
     <>
       <Head>
         <title>Zakład Opiekuńczo-Leczniczy w Koprzywnicy</title>
-
         <meta
           name="description"
           content="Zakład opiekuńczo-leczniczy w Koprzywnicy - oferujemy kompleksowe usługi opiekuńcze i medyczne dla osób starszych i niepełnosprawnych. Nasza placówka zapewnia wysoką jakość opieki w komfortowych warunkach. Zapraszamy do zapoznania się z naszą ofertą."
@@ -24,10 +24,8 @@ const Home: React.FC<Events> = ({ allEvents }) => {
           name="keywords"
           content="Zakład opiekuńczo-leczniczy, Zakład opiekuńczo-leczniczy w koprzywnicy Alzheimer, Koprzywnica, stowarzyszenie, Fizjoterapia, Hipoterapia, Rehabilitacja,"
         />
-
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./" />
-
         <meta property="og:image" content="../../public/images/zaklad.jpg" />
         <meta name="twitter:card" content="../../public/images/zaklad.jpg" />
         <meta name="twitter:image" content="../../public/images/zaklad.jpg" />
