@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import NavLogoWhite from "@/images/NavLogoWhite.png";
+import NavLogoWhite from "@/static/NavLogoWhite.png";
 import Image from "next/image";
 import { contactData } from "src/static/contactData";
 const Footer = () => {

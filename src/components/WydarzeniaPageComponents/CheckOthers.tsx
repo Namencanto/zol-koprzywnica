@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import EmptyPhotos from "../../../public/images/empty-photos.png";
+import EmptyPhotos from "@/static/empty-photos.png";
 import { Event } from "src/static/types";
 import { generateFriendlyLink } from "./generateFriendlyLink";
 

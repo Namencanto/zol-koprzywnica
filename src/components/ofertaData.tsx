@@ -1,22 +1,22 @@
-import RehabilitacjaOfferImage1 from "../../public/images/oferta/fizjoterapia/zdj06.jpg";
-import RehabilitacjaOfferImage2 from "../../public/images/oferta/fizjoterapia/zdj01.jpg";
-import RehabilitacjaOfferImage3 from "../../public/images/oferta/fizjoterapia/zdj02.jpg";
-import RehabilitacjaOfferImage4 from "../../public/images/oferta/fizjoterapia/zdj03.jpg";
-import RehabilitacjaOfferImage5 from "../../public/images/oferta/fizjoterapia/zdj04.jpg";
-import RehabilitacjaOfferImage6 from "../../public/images/oferta/fizjoterapia/zdj05.jpg";
-import BadaniaDiagnostyczneOfferImage from "../../public/images/oferta/badania-diagnostyczne.jpg";
-import TransportMedycznyOfferImage from "../../public/images/oferta/transport-medyczny.jpg";
+import RehabilitacjaOfferImage1 from "@/static/oferta/fizjoterapia/zdj06.jpg";
+import RehabilitacjaOfferImage2 from "@/static/oferta/fizjoterapia/zdj01.jpg";
+import RehabilitacjaOfferImage3 from "@/static/oferta/fizjoterapia/zdj02.jpg";
+import RehabilitacjaOfferImage4 from "@/static/oferta/fizjoterapia/zdj03.jpg";
+import RehabilitacjaOfferImage5 from "@/static/oferta/fizjoterapia/zdj04.jpg";
+import RehabilitacjaOfferImage6 from "@/static/oferta/fizjoterapia/zdj05.jpg";
+import BadaniaDiagnostyczneOfferImage from "@/static/oferta/badania-diagnostyczne.jpg";
+import TransportMedycznyOfferImage from "@/static/oferta/transport-medyczny.jpg";
 import { FaAmbulance, FaStethoscope, FaWheelchair } from "react-icons/fa";
 
-import HipoterapiaOfferImage from "../../public/images/oferta/hipoterapia/img004.jpg";
-import HipoterapiaOfferImage2 from "../../public/images/oferta/hipoterapia/img006.jpg";
-import HipoterapiaOfferImage3 from "../../public/images/oferta/hipoterapia/img010.jpg";
-import HipoterapiaOfferImage4 from "../../public/images/oferta/hipoterapia/img025.jpg";
-import HipoterapiaOfferImage5 from "../../public/images/oferta/hipoterapia/img032.jpg";
-import HipoterapiaOfferImage6 from "../../public/images/oferta/hipoterapia/img033.jpg";
-import HipoterapiaOfferImage7 from "../../public/images/oferta/hipoterapia/k3.jpg";
-import HipoterapiaOfferImage8 from "../../public/images/oferta/hipoterapia/img015.jpg";
-import HipoterapiaOfferImage9 from "../../public/images/oferta/hipoterapia/img007.jpg";
+import HipoterapiaOfferImage from "@/static/oferta/hipoterapia/img004.jpg";
+import HipoterapiaOfferImage2 from "@/static/oferta/hipoterapia/img006.jpg";
+import HipoterapiaOfferImage3 from "@/static/oferta/hipoterapia/img010.jpg";
+import HipoterapiaOfferImage4 from "@/static/oferta/hipoterapia/img025.jpg";
+import HipoterapiaOfferImage5 from "@/static/oferta/hipoterapia/img032.jpg";
+import HipoterapiaOfferImage6 from "@/static/oferta/hipoterapia/img033.jpg";
+import HipoterapiaOfferImage7 from "@/static/oferta/hipoterapia/k3.jpg";
+import HipoterapiaOfferImage8 from "@/static/oferta/hipoterapia/img015.jpg";
+import HipoterapiaOfferImage9 from "@/static/oferta/hipoterapia/img007.jpg";
 
 export type Service = {
   title:

@@ -110,6 +110,9 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
                   alt={`Główne zdjęcie z wydarzenia ${event[0].title}`}
                   width={750}
                   height={500}
+                  onClick={() => {
+                    console.log(images[howManyImagesRenderedCounter]);
+                  }}
                 />
               </div>
             ) : null}

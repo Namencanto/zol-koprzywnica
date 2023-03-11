@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "src/components/Navbar";
 import Image from "next/image";
 import Footer from "src/components/Footer";
-import CompanyImage from "../../../public/images/zaklad.jpg";
+import CompanyImage from "@/static/zaklad.jpg";
 import Link from "next/link";
 import Head from "next/head";
 

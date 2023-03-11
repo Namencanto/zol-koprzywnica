@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Step1 from "@/images/step-1.png";
-import Step2 from "@/images/step-2.png";
-import Step3 from "@/images/step-3.png";
+import Step1 from "@/static/step-1.png";
+import Step2 from "@/static/step-2.png";
+import Step3 from "@/static/step-3.png";
 const Steps = () => {
   return (
     <div className="bg-background-tertiary py-2">

@@ -1,6 +1,6 @@
-import Slider1 from "@/images/slider-1.jpg";
-import Slider2 from "@/images/slider-2.jpg";
-import Slider3 from "@/images/slider-3.jpg";
+import Slider1 from "@/static/slider-1.jpg";
+import Slider2 from "@/static/slider-2.jpg";
+import Slider3 from "@/static/slider-3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
   Navigation,
