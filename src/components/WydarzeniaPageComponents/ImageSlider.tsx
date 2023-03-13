@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
 import { IoClose, IoArrowBack, IoArrowForward } from "react-icons/io5";
 SwiperCore.use([Navigation]);
+import ReactDOM from "react-dom";
 
 interface Props {
   images: string[];
@@ -24,6 +25,21 @@ const ImageSlider: React.FC<Props> = ({
     setDisplayImage(false);
   };
 
+  useEffect(() => {
+    const modalContainer = document?.getElementById("modal-root");
+    // create a div element for the modal and append it to the modal container
+    const modalElement = document?.createElement("div");
+    modalContainer?.appendChild(modalElement);
+
+    return () => {
+      modalContainer?.removeChild(modalElement);
+    };
+  }, []);
+
+  if (!displayImage) {
+    return null;
+  }
+
   const handleNextImage = (e: any) => {
     e.stopPropagation();
     if (selectedImage === images.length - 1) {
@@ -42,11 +58,11 @@ const ImageSlider: React.FC<Props> = ({
     }
   };
 
-  return (
+  return ReactDOM.createPortal(
     <div
       aria-modal="true"
       role="dialog"
-      className="relative"
+      className="relative modal-content"
       tabIndex={0}
       onKeyDown={(event) => {
         if (event.key === "ArrowRight") {
@@ -79,37 +95,37 @@ const ImageSlider: React.FC<Props> = ({
             }
           }}
         >
-          <div
-            tabIndex={0}
-            className="relative w-full h-full flex items-center justify-center"
-          >
+          <div className="relative w-full h-full flex items-center justify-center">
             <Image
               onClick={(e) => {
                 e.stopPropagation();
               }}
-              width={500}
-              height={500}
+              loading="eager"
+              sizes="100%"
+              width={1185}
+              height={890}
               src={images[selectedImage]}
               alt={`Slide ${selectedImage}`}
               className="w-auto h-4/6 object-contain"
             />
             <button
+              autoFocus
               tabIndex={0}
-              className="absolute top-4 right-4 p-2 text-white bg-gray-700 bg-opacity-80 rounded-full focus:outline-none"
+              className="focus:outline-4 outline-white absolute top-4 right-4 p-2 text-white bg-gray-700 bg-opacity-80 rounded-full focus:outline-none"
             >
               <IoClose size={24} />
             </button>
 
             <button
               tabIndex={0}
-              className="absolute top-1/2 left-4 p-2 text-white bg-gray-700 bg-opacity-80 rounded-full focus:outline-none transform -translate-y-1/2"
+              className="focus:outline-4 outline-white absolute top-1/2 left-4 p-2 text-white bg-gray-700 bg-opacity-80 rounded-full focus:outline-none transform -translate-y-1/2"
               onClick={handlePreviousImage}
             >
               <IoArrowBack size={24} />
             </button>
             <button
               tabIndex={0}
-              className="absolute top-1/2 right-4 p-2 text-white bg-gray-700 bg-opacity-80 rounded-full focus:outline-none transform -translate-y-1/2"
+              className="focus:outline-4 outline-white absolute top-1/2 right-4 p-2 text-white bg-gray-700 bg-opacity-80 rounded-full focus:outline-none transform -translate-y-1/2"
               onClick={handleNextImage}
               onKeyDown={(event) => {
                 if (event.key === "ArrowRight") {
@@ -124,7 +140,8 @@ const ImageSlider: React.FC<Props> = ({
           </div>
         </div>
       )}
-    </div>
+    </div>,
+    document?.getElementById("modal-root") as Element
   );
 };
 

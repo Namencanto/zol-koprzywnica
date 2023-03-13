@@ -30,7 +30,7 @@ const Events: React.FC<EventsProps> = ({ allEvents }) => {
           name="keywords"
           content="zakład opiekuńczo-leczniczy, wydarzenia, historia, opieka nad osobami starszymi"
         />
-       
+
         <meta
           property="og:title"
           content="Wydarzenia na przestrzeni lat zakładu opiekuńczo-leczniczego"

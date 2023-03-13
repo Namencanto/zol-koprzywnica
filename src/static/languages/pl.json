@@ -1,9 +1,33 @@
 {
+  "2003": [
+    {
+      "date": "2003",
+      "title": "Powstanie zakładu - pierwotny budynek",
+      "description": [
+        "Powstanie zakładu opiekuńczo-leczniczego w Koprzywnicy to wydarzenie, które miało ogromne znaczenie dla lokalnej społeczności. Budynek, który początkowo miał być przeznaczony na aptekę, był przez wiele lat nieużywany i niszczejący. Okalały go graffiti \"szkoła óczy\", a młodzież często spotykała się w jego wnętrzu.",
+        "Dzięki inicjatywie stowarzyszenia założonego przez Marka i Lucynę Majkowskich oraz innych działaczy służby zdrowia, udało się przekształcić ten zaniedbany budynek w zakład opiekuńczo-leczniczy. Po wielu pracach remontowych, dzięki funduszom uzyskanym ze środków publicznych oraz prywatnych, budynek zyskał nowe życie i zaczął pełnić ważną rolę w społeczności lokalnej.",
+        "Dziś Zakład Opiekuńczo-Leczniczy w Koprzywnicy to ważne miejsce, które zapewnia profesjonalną opiekę medyczną i pielęgnacyjną dla pacjentów z różnymi chorobami i schorzeniami. Inicjatywa Marka i Lucyny Majkowskich oraz innych działaczy służby zdrowia odegrała kluczową rolę w rozwoju opieki zdrowotnej w regionie, a pierwotny budynek, który kiedyś niszczał i służył jako miejsce spotkań młodzieży, dziś spełnia ważną rolę społeczną."
+      ],
+      "images": [
+        "/static/events/2003/pierwotny-budynek/1.jpg",
+        "/static/events/2003/pierwotny-budynek/2.jpg",
+        "/static/events/2003/pierwotny-budynek/3.jpg",
+        "/static/events/2003/pierwotny-budynek/4.jpg",
+        "/static/events/2003/pierwotny-budynek/5.jpg",
+        "/static/events/2003/pierwotny-budynek/6.jpg",
+        "/static/events/2003/pierwotny-budynek/7.jpg",
+        "/static/events/2003/pierwotny-budynek/8.jpg",
+        "/static/events/2003/pierwotny-budynek/9.jpg",
+        "/static/events/2003/pierwotny-budynek/10.jpg",
+        "/static/events/2003/pierwotny-budynek/11.jpg",
+        "/static/events/2003/pierwotny-budynek/12.jpg"
+      ]
+    }
+  ],
   "2004": [
     {
       "date": "12-2004",
       "title": "Zakupiono podnośnik dla pacjentów TRIXIE LIFT",
-      "slug": "zakupiono-podnosnik-dla-pacjentow-trixie-lift",
       "description": [
         "Na cele ZOL zakupiono podnośnik dla pacjentów TRIXIE LIFT.",
         "Zakup wspomogła między innymi Huta Szkła PILKINGTON Automotive, Sandomierz."
@@ -301,7 +325,11 @@
     {
       "date": "07-04-2013",
       "title": "Dziesięciolecie Zakładu Opiekuńczo-Leczniczego",
-      "description": ["Do opisu ! sic!"],
+      "description": [
+        "Z okazji 10-lecia działalności Zakładu Opiekuńczo-Leczniczego odbyła się uroczysta msza święta oraz spotkanie z pracownikami i zaproszonymi gośćmi. Podczas mszy świętej, która była ważnym wydarzeniem dla zakładu, uczestnicy modlili się w intencji pensjonariuszy oraz personelu. Po mszy odbyło się uroczyste spotkanie, na którym dyrekcja zakładu przywitała zaproszonych gości i pracowników.",
+        "Impreza była pełna atrakcji, w tym tortu oraz szampana, co dodało uroczystości i radości. Jubileusz był okazją do podziękowania pracownikom za ich codzienną pracę oraz do złożenia życzeń pensjonariuszom.",
+        "Wydarzenie cieszyło się dużym zainteresowaniem i przyczyniło się do umocnienia więzi pomiędzy pracownikami i pensjonariuszami zakładu. Był to ważny dzień w historii Zakładu Opiekuńczo-Leczniczego, który pozostanie na długo w pamięci wszystkich uczestników."
+      ],
       "images": [
         "/static/events/2013/10-lecie-zakladu/1.jpg",
         "/static/events/2013/10-lecie-zakladu/2.jpg",
@@ -357,7 +385,9 @@
     {
       "date": "20-02-2017",
       "title": "Wizyta Biskupa Krzysztofa Nitkiewicza 2017",
-      "description": ["Do opisu ! sic!"],
+      "description": [
+        "Wizyta Księdza Biskupa Krzysztofa Nitkiewicza w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy była miłym spotkaniem z personelem i pensjonariuszami zakładu. Wizyta wpłynęła pozytywnie na życie zakładu, a Ksiądz Biskup miał okazję porozmawiać z mieszkańcami i wysłuchać ich problemów. Spotkanie przyczyniło się do nawiązania pozytywnych relacji i poprawy jakości życia pensjonariuszy."
+      ],
       "images": [
         "/static/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/1.jpg",
         "/static/events/2017/wizyta-biskupa-krzysztofa-nitkiewicza/2.jpg",
@@ -392,9 +422,12 @@
       ]
     },
     {
-      "date": "11-2018",
+      "date": "11-11-2018",
       "title": "Przekazanie i poświęcenie pamiątkowej figurki „Chrystusa Ukrzyżowanego”, przez Pana Jana Materkowskiego z rodziną.",
-      "description": ["Do opisu ! sic!"],
+      "description": [
+        "Przekazanie i poświęcenie pamiątkowej figurki „Chrystusa Ukrzyżowanego”, przez Pana Jana Materkowskiego z rodziną w Zakładzie opiekuńczo-leczniczym w Koprzywnicy, stało się jednym z wyjątkowych wydarzeń, które odbyły się 11 listopada 2018 roku, w rocznicę 100-lecia odzyskania przez Polskę niepodległości oraz 750-lecia nadania praw miejskich Koprzywnicy.",
+        "Warto wspomnieć, że inicjatywa odnowienia i renowacji wielu zabytków w Koprzywnicy i okolicach jest jedną z pasji doktora Marka Majkowskiego, który jest znanym i szanowanym działaczem społecznym oraz lekarzem. Jego zainteresowania w zakresie kultury i historii regionu przyczyniły się do wielu sukcesów, w tym do przywrócenia dawnej świetności wielu zabytkowych budynków i obiektów w regionie."
+      ],
       "images": [
         "/static/events/2018/przekazanie-figurki/1.jpg",
         "/static/events/2018/przekazanie-figurki/2.jpg",
@@ -408,13 +441,82 @@
         "/static/events/2018/przekazanie-figurki/10.jpg",
         "/static/events/2018/przekazanie-figurki/11.jpg"
       ]
+    },
+    {
+      "date": "08-12-2018",
+      "title": "Kapsuła czasu",
+      "description": [
+        "W dniu 8 grudnia 2018 roku na placu przy Zakładzie Opiekuńczo-Leczniczym, obok figury Chrystusa Ukrzyżowanego, odbyło się uroczyste wmurowanie kapsuły czasu. Wydarzenie zostało zainicjowane przez dyrektora zakładu, Marka Majkowskiego wraz z jego żoną. Wnuk Patryk oraz jego rodzice byli głównymi świadkami tego wyjątkowego momentu.",
+        "Wewnątrz kapsuły znalazły się: plan zagospodarowania przestrzennego miasta, współczesne polskie monety, różaniec oraz wiersz lokalnego artysty, Mariana Prusia. Wydarzenie to było ważnym momentem w historii zakładu, a zainicjowanie go przez dyrektora Marka Majkowskiego pokazało jego zaangażowanie w rozwój i pamięć o placówce."
+      ],
+      "images": [
+        "/static/events/2018/kapsula-czasu/1.jpg",
+        "/static/events/2018/kapsula-czasu/2.jpg",
+        "/static/events/2018/kapsula-czasu/3.jpg",
+        "/static/events/2018/kapsula-czasu/4.jpg",
+        "/static/events/2018/kapsula-czasu/5.jpg",
+        "/static/events/2018/kapsula-czasu/6.jpg"
+      ]
+    }
+  ],
+  "2019": [
+    {
+      "date": "07-03-2019",
+      "title": "Wizyta Marszałka województwa świętokrzyskiego Andrzeja Bętkowskiego",
+      "description": [
+        "W dniu 7 marca 2019 roku, Zakład Opiekuńczo-Leczniczy w Koprzywnicy miał zaszczyt gościć Marszałka Województwa Świętokrzyskiego - pana Andrzeja Bętkowskiego. Podczas wizyty Marszałek miał okazję spotkać się z personelem placówki oraz jej pacjentami.",
+        "Wizyta ta była doskonałą okazją do zapoznania się z codzienną pracą placówki i zrozumienia trudów, jakie niosą ze sobą prace pielęgniarskie i lekarskie. Wspólne rozmowy pozwoliły na przedstawienie wyzwań, z jakimi boryka się placówka oraz prezentację planów na przyszłość. Marszałek wyraził uznanie dla personelu placówki i podziękował za ich trudną, ale bardzo potrzebną pracę w służbie zdrowia mieszkańców województwa."
+      ],
+      "images": [
+        "/static/events/2019/wizyta-marszalka/1.jpg",
+        "/static/events/2019/wizyta-marszalka/2.jpg"
+      ]
+    },
+    {
+      "date": "24-10-2019",
+      "title": "Psycholog Natalia Majkowska - Uzyskanie stopnia naukowego Doktorata nauk społecznych w zakresie psychologii",
+      "description": [
+        "Psycholog Natalia Majkowska uzyskała stopień naukowy doktora nauk społecznych w zakresie psychologii na uroczystej promocji doktorskiej Katolickiego Uniwersytetu Lubelskiego Jana Pawła II, która odbyła się 24 października 2019 roku. Promotorem pracy doktorskiej Natalii Majkowskiej była uznana profesor Stanisława Steuden, co dodaje jeszcze większej wagi i prestiżu jej osiągnięciu. Jej praca dotyczyła wypalenia zawodowego w opiece i badania zostały przeprowadzone między innymi w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy, z udziałem pacjentów i personelu.",
+        "Na podstawie swojej pracy doktorskiej opublikowała również książkę o tym samym tytule, która stanowi cenne źródło informacji dla pracowników służby zdrowia oraz osób zajmujących się opieką nad osobami chorymi.",
+        "Uzyskanie stopnia doktora przez Natalię Majkowską było ważnym wydarzeniem dla środowiska naukowego oraz dla jej rodziny i przyjaciół. Było to wyróżnienie dla niej samej oraz dla całej społeczności naukowej, która docenia jej wysiłek i wkład w badania nad psychologią i zdrowiem psychicznym."
+      ],
+      "images": [
+        "/static/events/2019/doktorat/1.jpg",
+        "/static/events/2019/doktorat/2.jpg",
+        "/static/events/2019/doktorat/3.jpg",
+        "/static/events/2019/doktorat/4.jpg",
+        "/static/events/2019/doktorat/5.jpg",
+        "/static/events/2019/doktorat/6.jpg",
+        "/static/events/2019/doktorat/7.jpg",
+        "/static/events/2019/doktorat/8.jpg",
+        "/static/events/2019/doktorat/9.jpg",
+        "/static/events/2019/doktorat/10.jpg"
+      ]
+    }
+  ],
+  "2020": [
+    {
+      "date": "10-2020",
+      "title": "Udział Stowarzyszenia w odnowieniu obelisku na Cmentarzu Żydowskim w Koprzywnicy",
+      "description": [
+        "W ramach inicjatywy mającej na celu podkreślenie istoty przenikania kultur w lokalnej społeczności, Stowarzyszenie wzięło udział w odnowieniu obelisku na Cmentarzu Żydowskim w Koprzywnicy. Działanie to zostało zainicjowane przez Lucynę i Marka Majkowskich, którzy poświęcili swój czas i wysiłek na rzecz zachowania lokalnej historii. Ich działania zostały docenione przez społeczność, a odnowiony obelisk stanowi dziś istotny element dziedzictwa kulturowego miasta."
+      ],
+      "images": [
+        "/static/events/2020/cmentarz-zydowski/1.jpg",
+        "/static/events/2020/cmentarz-zydowski/2.jpg",
+        "/static/events/2020/cmentarz-zydowski/3.jpg"
+      ]
     }
   ],
   "2022": [
     {
       "date": "22-11-2022",
       "title": "Wizyta Biskupa Krzysztofa Nitkiewicza 2022",
-      "description": ["Do opisu ! sic!"],
+      "description": [
+        "W ramach wizytacji parafii św. Floriana w Koprzywnicy odbyła się wizyta Księdza Biskupa Krzysztofa Nitkiewicza w Zakładzie Opiekuńczo-Leczniczym. Spotkanie było bardzo miłe i pozytywne dla personelu oraz pensjonariuszy zakładu.",
+        "W trakcie spotkania Ksiądz Biskup rozmawiał z pensjonariuszami i personelem, wysłuchał ich problemów oraz przeprowadził modlitwę. Spotkanie przebiegło w bardzo przyjaznej atmosferze i przyczyniło się pozytywnie do życia zakładu.",
+        "Wizyta Księdza Biskupa Krzysztofa Nitkiewicza była bardzo ważnym wydarzeniem dla mieszkańców zakładu oraz personelu. Spotkanie pozwoliło na nawiązanie pozytywnych relacji, wzajemne poznanie się oraz poprawę jakości życia pensjonariuszy."
+      ],
       "images": [
         "/static/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/1.jpg",
         "/static/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/2.jpg",

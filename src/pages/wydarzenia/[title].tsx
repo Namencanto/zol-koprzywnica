@@ -47,10 +47,12 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
       <Navbar />
       {images && images[1] ? (
         <Image
+          priority={true}
           src={images[0]}
           alt={`Główne zdjęcie z wydarzenia ${event[0].title}`}
-          width={1000}
-          height={1000}
+          sizes="100%"
+          height={500}
+          width={2400}
           style={{
             objectFit: "cover",
             maxHeight: "500px",
@@ -108,11 +110,9 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
                   className="w-full h-auto border-2 border-primary shadow-lg"
                   src={images[1] ? images[1] : images[0]}
                   alt={`Główne zdjęcie z wydarzenia ${event[0].title}`}
-                  width={750}
-                  height={500}
-                  onClick={() => {
-                    console.log(images[howManyImagesRenderedCounter]);
-                  }}
+                  sizes="100%"
+                  width={596}
+                  height={448}
                 />
               </div>
             ) : null}
@@ -155,13 +155,14 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
                   }}
                 >
                   <Image
+                    className="object-cover h-48 md:h-64"
                     id={i.toString()}
                     src={image}
                     alt={`Zdjęcie ${i + 1} galerii z wydarzenia ${
                       event[0].title
                     }`}
-                    fill
-                    style={{ objectFit: "cover" }}
+                    width={298}
+                    height={256}
                   />
                 </div>
               ))

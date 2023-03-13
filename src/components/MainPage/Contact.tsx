@@ -302,7 +302,9 @@ const Contact = () => {
                       }}
                     ></textarea>
                     <Checkbox
-                      className="!text-[#07756c]"
+                      style={{
+                        color: theme === "light" ? "#07756c" : "#eee",
+                      }}
                       id="privacyPolicyCheckbox"
                       checked={isChecked}
                       color="primary"
@@ -398,7 +400,7 @@ const Contact = () => {
                   </Link>
                 </div>
 
-                <div className="flex my-4 w-1/1 lg:w-2/3">
+                <div className="flex my-4">
                   <div className="flex flex-col">
                     <i className="fas fa-phone-alt pt-2 pr-2" />
                   </div>

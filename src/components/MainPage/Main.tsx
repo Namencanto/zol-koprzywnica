@@ -97,7 +97,7 @@ const Main = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            priority={true}
+            loading="eager"
             fill
             src={Slider2}
             alt="Widok na fasadę zakładu opiekuńczo-leczniczego"
@@ -107,7 +107,7 @@ const Main = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            priority={true}
+            loading="eager"
             fill
             src={Slider3}
             alt="Widok na zakład opiekuńczo-leczniczy od tyłu"
