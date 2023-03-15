@@ -78,7 +78,7 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
           >
             {event[0].date}
           </time>
-          <ShareButtons url={currentUrl} />
+          <ShareButtons url={currentUrl} title={event[0].title} />
         </div>
         {/* Long component case */}
         {isLongComponent ? (

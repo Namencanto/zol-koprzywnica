@@ -264,6 +264,21 @@
   "2009": [
     {
       "date": "2009",
+      "title": "Nocne czytanie poezji w Kościele św. Floriana w Koprzywnicy w ramach walki z rakiem piersi",
+      "description": [
+        "W Kościele św. Floriana w Koprzywnicy odbyło się wyjątkowe wydarzenie. W ramach walki z rakiem piersi, zorganizowane zostało nocne czytanie poezji, którego celem było zwrócenie uwagi na to bardzo ważne zagadnienie zdrowotne.",
+        "Podczas wydarzenia, Dyrektor Marek Majkowski z Zakładu opiekuńczo leczniczego w Koprzywnicy, był uczestnikiem nocnego czytania. Czytał on różne wiersze i utwory poetyckie, przywołując różne emocje i refleksje. Całe wydarzenie było pełne emocji. Nocne czytanie poezji w Kościele św. Floriana w Koprzywnicy było nie tylko wspaniałą okazją do popularyzacji poezji, ale również do zwrócenia uwagi na istotne problemy zdrowotne."
+      ],
+      "images": [
+        "/static/events/2009/nocne-czytanie-poezji/1.jpg",
+        "/static/events/2009/nocne-czytanie-poezji/2.jpg",
+        "/static/events/2009/nocne-czytanie-poezji/3.jpg",
+        "/static/events/2009/nocne-czytanie-poezji/4.jpg",
+        "/static/events/2009/nocne-czytanie-poezji/5.jpg"
+      ]
+    },
+    {
+      "date": "2009",
       "title": "Podsumowanie Programu Integracji Społecznej 2009 rok",
       "description": [
         "Realizacja zadania pozwoliła nam ocenić jaki styl życia prowadzą osoby po 60 roku życia zamieszkujące Miasto i Gminę Koprzywnica.",
@@ -311,6 +326,21 @@
       ]
     },
     {
+      "date": "07-04-2010",
+      "title": "Uroczyste poświęcenie obrazu Matki Bożej Sulisławskiej, repliki kielicha oraz cegły św. Ducha w Koprzywnicy",
+      "description": [
+        " W Zakładzie Opiekuńczo Leczniczym w Koprzywnicy odbyło się wyjątkowe wydarzenie. W dniu 7 kwietnia 2010 roku, czyli w siódmą rocznicę założenia zakładu, odbyło się uroczyste poświęcenie obrazu Matki Bożej Sulisławskiej, repliki kielicha oraz cegły Kościoła św. Ducha.",
+        "Po zakończeniu ceremonii, pacjenci i personel zakładu mieli okazję porozmawiać z duchownymi oraz podziwiać nowe obiekty kultu religijnego. Wydarzenie to z pewnością pozostanie w pamięci wszystkich uczestników jako wyjątkowy moment, który wzmocnił więź pomiędzy zakładem a lokalną społecznością."
+      ],
+      "images": [
+        "/static/events/2010/uroczyste-poswiecenie/1.jpg",
+        "/static/events/2010/uroczyste-poswiecenie/2.jpg",
+        "/static/events/2010/uroczyste-poswiecenie/3.jpg",
+        "/static/events/2010/uroczyste-poswiecenie/4.jpg",
+        "/static/events/2010/uroczyste-poswiecenie/5.jpg"
+      ]
+    },
+    {
       "date": "15-06-2010",
       "title": "Poświęcenie obrazu św. Walentego przez biskupa Krzysztofa Nitkiewicza",
       "description": [
@@ -331,7 +361,22 @@
   ],
   "2011": [
     {
-      "date": "6-10-2011",
+      "date": "18-02-2011",
+      "title": "Wizyta Edwarda Frankowskiego",
+      "description": [
+        "W dniu 10 lutego 2011 roku w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy odbyła się szczególna wizyta. Do placówki przybył Biskup Edward Frankowski, który wpisał się do kroniki zakładu oraz odprawił modlitwę.",
+        "Podczas swojej wizyty, Biskup Frankowski rozmawiał z pacjentami, składając im życzenia zdrowia i siły do walki z chorobą. Był to dla naszej społeczności niezwykły dzień, pełen wzruszeń i radości.",
+        "Wizyta Biskupa Edwarda Frankowskiego była dla nas nie tylko duchowym wsparciem, ale również ważnym wydarzeniem, które zapisaliśmy w historii naszej placówki. Dziękujemy za odwiedziny i błogosławieństwo, które niosą ze sobą nadzieję i wiarę w lepsze jutro."
+      ],
+      "images": [
+        "/static/events/2011/wizyta-biskup-frankowski/1.jpg",
+        "/static/events/2011/wizyta-biskup-frankowski/2.jpg",
+        "/static/events/2011/wizyta-biskup-frankowski/3.jpg",
+        "/static/events/2011/wizyta-biskup-frankowski/4.jpg"
+      ]
+    },
+    {
+      "date": "06-10-2011",
       "title": "21 Konferencja Alzheimer Europe 2011 rok",
       "description": [
         "W dniach 6-8 .10.2011 roku przedstawiciele Stowarzyszenia na Rzecz Osób z Chorobą Alzheimera z Koprzywnicy uczestniczyli w 21 Konferencji Alzheimer Europe w Warszawie, która odbyła się pod hasłem ,,Europejska Solidarność bez Granic”.",
@@ -436,9 +481,41 @@
         "/static/events/2015/obchody-stulecia/9.jpg",
         "/static/events/2015/obchody-stulecia/10.jpg"
       ]
+    },
+    {
+      "date": "15-12-2015",
+      "title": "Setna rocznica śmierci Aloisa Alzheimera",
+      "description": [
+        "W dniu 15 grudnia 2015 roku w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy odbyło się ważne wydarzenie związane ze setną rocznicą śmierci Aloisa Alzheimera. Z tej okazji stowarzyszenie ufundowało portret tego wybitnego naukowca, który namalował artysta malarz Tomasz Staszewski z Sulisławic. Portret został uroczyście odsłonięty podczas krótkiego spotkania z dyrekcją zakładu, pracownikami oraz lokalnym artystą.",
+        "Wydarzenie to miało szczególne znaczenie dla Zakładu Opiekuńczo-Leczniczego w Koprzywnicy, który specjalizuje się w opiece nad pacjentami z chorobą Alzheimera. Spotkanie stanowiło okazję do upamiętnienia osoby, która poświęciła swoje życie na badania i leczenie tej choroby."
+      ],
+      "images": [
+        "/static/events/2015/100-rocznica-smierci-alzheimera/1.jpg",
+        "/static/events/2015/100-rocznica-smierci-alzheimera/2.jpg",
+        "/static/events/2015/100-rocznica-smierci-alzheimera/3.jpg"
+      ]
     }
   ],
   "2016": [
+    {
+      "date": "22-06-2016",
+      "title": "Wizyta Prof. Stanisławy Steuden wraz z grupą doktorantów z Insytutu Psychologii Katolickiego Uniwersytetu Lubelskiego",
+      "description": [
+        "22 czerwca 2016 roku w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy odbyła się wizyta profesor Stanisławy Steuden z grupą doktorantów z Instytutu Psychologii Katolickiego Uniwersytetu Lubelskiego zaproszonych z inicjatywy Psycholog Natalii Majkowskiego która była wtedy w trakcie doktoratu. Podczas wizyty goście mieli okazję spotkać się z personelem i pacjentami zakładu oraz zwiedzić Koprzywnicę i Sandomierz.",
+        "W ramach spotkania omówiono różne aspekty opieki nad pacjentami i omówiono aktualne problemy w dziedzinie psychologii klinicznej. Profesor Steuden i jej zespół zadawali pytania dotyczące funkcjonowania zakładu, a pracownicy i pacjenci dzielili się swoimi doświadczeniami.",
+        "Po spotkaniu wszyscy udali się na zwiedzanie pięknych miejscowości Koprzywnicy i Sandomierza. Wizyta była okazją do wymiany doświadczeń oraz poszerzenia wiedzy na temat opieki nad pacjentami w trudnych sytuacjach zdrowotnych."
+      ],
+      "images": [
+        "/static/events/2016/wizyta-doktorantow/1.jpg",
+        "/static/events/2016/wizyta-doktorantow/2.jpg",
+        "/static/events/2016/wizyta-doktorantow/3.jpg",
+        "/static/events/2016/wizyta-doktorantow/4.jpg",
+        "/static/events/2016/wizyta-doktorantow/5.jpg",
+        "/static/events/2016/wizyta-doktorantow/6.jpg",
+        "/static/events/2016/wizyta-doktorantow/7.jpg",
+        "/static/events/2016/wizyta-doktorantow/8.jpg"
+      ]
+    },
     {
       "date": "30-11-2016",
       "title": "Koncert zespolu „Powiślanie”",
@@ -616,6 +693,24 @@
     }
   ],
   "2023": [
+    {
+      "date": "18-02-2023",
+      "title": "Udział Zakładu Opiekuńczo-Leczniczego w akcjach charytatywnych",
+      "description": [
+        "18 lutego 2023 Zakład Opiekuńczo-Leczniczy wziął udział w akcjach charytatywnych i reprezentował się podczas balu „Bartoszek kontra SMA”. W imprezie wzięła udział grupa pracowników ZOLu oraz dyrektor zakładu.",
+        "Podczas balu, zakład wystawił vouchery na zabiegi rehabilitacyjne, igłoterapie i bańkę chińską, a dochód ze sprzedaży tych voucherów został przekazany na rzecz leczenia chorego chłopca. W trakcie balu pracownicy zakładu mieli okazję poznać inicjatorów akcji, a także uczestniczyć w licznych licytacjach i konkursach, których celem było zebranie jak największej kwoty na rzecz chorego dziecka. Wydarzenie było nie tylko okazją do wsparcia szczytnej inicjatywy, ale także do integracji personelu oraz promocji Zakładu Opiekuńczo-Leczniczego w Koprzywnicy wśród lokalnej społeczności."
+      ],
+      "images": [
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/1.jpg",
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/2.jpg",
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/3.jpg",
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/4.jpg",
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/5.jpg",
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/6.jpg",
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/7.jpg",
+        "/static/events/2023/akcja-charytatywna-bartosz-sma/8.jpg"
+      ]
+    },
     {
       "date": "11-03-2023",
       "title": "Laur Kobieta 2023",

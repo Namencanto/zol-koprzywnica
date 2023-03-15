@@ -15,9 +15,10 @@ import { CSSTransition } from "react-transition-group";
 import { ThemeContext } from "src/context/themeContext";
 interface ShareButtonsProps {
   url: string;
+  title: string;
 }
 
-const ShareButtons: React.FC<ShareButtonsProps> = ({ url }) => {
+const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
   const { theme } = useContext(ThemeContext);
   const [isMobile, setIsMobile] = useState<Boolean>(false);
 
@@ -109,8 +110,8 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ url }) => {
               </TwitterShareButton>
               <EmailShareButton
                 url={url}
-                subject="Zapraszam na wydarzenie"
-                body="Witaj! Zapraszam Cię na wydarzenie w Żółkwi, które odbędzie się w przyszłym miesiącu. Oto link do wydarzenia:"
+                subject={`Sprawdź wydarzenie ${title} Zakładu Opiekuńczo-Leczniczego`}
+                body={`Witaj! Sprawdź wydarzenie ${title} Zakładu Opiekuńczo-Leczniczego. Oto link do wydarzenia:`}
               >
                 <EmailIcon size={40} round />
               </EmailShareButton>

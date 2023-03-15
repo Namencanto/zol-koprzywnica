@@ -45,9 +45,9 @@ const About: React.FC = () => {
       <div className="relative">
         <Image
           src={CompanyImage}
-          alt="Opis obrazka"
-          width={1000}
-          height={1000}
+          alt="Widok na fasadę zakładu opiekuńczo-leczniczego"
+          width={2400}
+          height={500}
           style={{
             objectFit: "cover",
             maxHeight: "500px",
