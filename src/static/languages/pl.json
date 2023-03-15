@@ -4,8 +4,8 @@
       "date": "2003",
       "title": "Powstanie zakładu - pierwotny budynek",
       "description": [
-        "Powstanie zakładu opiekuńczo-leczniczego w Koprzywnicy to wydarzenie, które miało ogromne znaczenie dla lokalnej społeczności. Budynek, który początkowo miał być przeznaczony na aptekę, był przez wiele lat nieużywany i niszczejący. Okalały go graffiti \"szkoła óczy\", a młodzież często spotykała się w jego wnętrzu.",
-        "Dzięki inicjatywie stowarzyszenia założonego przez Marka i Lucynę Majkowskich oraz innych działaczy służby zdrowia, udało się przekształcić ten zaniedbany budynek w zakład opiekuńczo-leczniczy. Po wielu pracach remontowych, dzięki funduszom uzyskanym ze środków publicznych oraz prywatnych, budynek zyskał nowe życie i zaczął pełnić ważną rolę w społeczności lokalnej.",
+        "Powstanie Zakładu Opiekuńczo-Leczniczego w Koprzywnicy to wydarzenie, które miało ogromne znaczenie dla lokalnej społeczności. Budynek, który początkowo miał być przeznaczony na aptekę, był przez wiele lat nieużywany i niszczejący. Okalały go graffiti \"szkoła óczy\", a młodzież często spotykała się w jego wnętrzu.",
+        "Dzięki inicjatywie stowarzyszenia założonego przez Marka i Lucynę Majkowskich oraz innych działaczy służby zdrowia, udało się przekształcić ten zaniedbany budynek w Zakład Opiekuńczo-Leczniczy. Po wielu pracach remontowych, dzięki funduszom uzyskanym ze środków publicznych oraz prywatnych, budynek zyskał nowe życie i zaczął pełnić ważną rolę w społeczności lokalnej.",
         "Dziś Zakład Opiekuńczo-Leczniczy w Koprzywnicy to ważne miejsce, które zapewnia profesjonalną opiekę medyczną i pielęgnacyjną dla pacjentów z różnymi chorobami i schorzeniami. Inicjatywa Marka i Lucyny Majkowskich oraz innych działaczy służby zdrowia odegrała kluczową rolę w rozwoju opieki zdrowotnej w regionie, a pierwotny budynek, który kiedyś niszczał i służył jako miejsce spotkań młodzieży, dziś spełnia ważną rolę społeczną."
       ],
       "images": [
@@ -21,6 +21,40 @@
         "/static/events/2003/pierwotny-budynek/10.jpg",
         "/static/events/2003/pierwotny-budynek/11.jpg",
         "/static/events/2003/pierwotny-budynek/12.jpg"
+      ]
+    },
+    {
+      "date": "07-04-2003",
+      "title": "Uroczyste otwarcie Zakładu Opiekuńczo-Leczniczego w Koprzywnicy",
+      "description": [
+        "W dniu 7 kwietnia 2003 roku miało miejsce uroczyste otwarcie Zakładu Opiekuńczo-Leczniczego w Koprzywnicy. Był to pierwszy i jedyny wówczas wojewódzki ośrodek zajmujący się specjalistyczną opieką nad pacjentami z zespołami otępiennymi. Nowoczesne zaplecze oraz wysoko wykwalifikowana kadra pozwalały na profesjonalną opiekę nad pacjentami, a także prowadzenie badań naukowych nad tą chorobą.",
+        "W otwarciu uczestniczyli przedstawiciele lokalnych władz oraz służby zdrowia, a także pacjenci i ich rodziny. W ramach uroczystości odbyła się msza święta oraz odsłonięto tablicę upamiętniającą założycieli i budowniczych zakładu.",
+        "Zakład powstał z inicjatywy Dr. Marka Majkowskiego i jego żony Lucyny, którzy od lat zajmowali się opieką nad osobami chorymi na zespoły otępienne. To wydarzenie było ważnym krokiem w zapewnieniu lepszej opieki nad chorymi na zespoły otępienne w regionie, a także w popularyzacji i zwiększeniu świadomości na temat tej choroby."
+      ],
+      "images": [
+        "/static/events/2003/otwarcie-zakladu/1.jpg",
+        "/static/events/2003/otwarcie-zakladu/2.jpg",
+        "/static/events/2003/otwarcie-zakladu/3.jpg",
+        "/static/events/2003/otwarcie-zakladu/4.jpg",
+        "/static/events/2003/otwarcie-zakladu/5.jpg",
+        "/static/events/2003/otwarcie-zakladu/6.jpg",
+        "/static/events/2003/otwarcie-zakladu/7.jpg",
+        "/static/events/2003/otwarcie-zakladu/8.jpg",
+        "/static/events/2003/otwarcie-zakladu/9.jpg",
+        "/static/events/2003/otwarcie-zakladu/10.jpg"
+      ]
+    },
+    {
+      "date": "11-05-2003",
+      "title": "Odsłonięcie tablicy pamiątkowej ku czci Sługi Bożego Biskupa Sandomierskiego Piotra Gołębowskiego",
+      "description": [
+        "11 maja 2003 roku odbyło się uroczyste odsłonięcie tablicy pamiątkowej ku czci Sługi Bożego Biskupa Sandomierskiego Piotra Gołębowskiego w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy. Tablica została odsłonięta przez księdza biskupa Andrzeja Dzięgę, który także poświęcił cały zakład. Sługa Boży Biskup Piotr Gołębowski był jednym z wybitnych biskupów diecezji sandomierskiej, który zmarł w 1980 roku.",
+        "Jego osoba i dzieła zainspirowały wielu ludzi do działania na rzecz bliźnich i Kościoła. Tablica pamiątkowa była symbolicznym wyrazem szacunku i podziękowania za jego życie i działalność. Uroczystość zgromadziła wielu mieszkańców okolicznych wsi oraz przedstawicieli władz kościelnych i lokalnych."
+      ],
+      "images": [
+        "/static/events/2003/odsloniecie-tablicy/1.jpg",
+        "/static/events/2003/odsloniecie-tablicy/2.jpg",
+        "/static/events/2003/odsloniecie-tablicy/3.jpg"
       ]
     }
   ],
@@ -211,6 +245,20 @@
         "/static/events/2008/zjazd-stowarzyszen-alzheimerowskich/5.jpg",
         "/static/events/2008/zjazd-stowarzyszen-alzheimerowskich/6.jpg"
       ]
+    },
+    {
+      "date": "08-2008",
+      "title": "Pacjenci ZOL podczas dogoterapii.",
+      "description": [
+        "W sierpniu 2008 roku pacjenci zakładu opiekuńczo-leczniczego w Koprzywnicy brali udział w dogoterapii w przyzakładowym parku integracji społecznej. Terapia z psem pozwala na poprawę stanu emocjonalnego pacjentów, redukcję lęku, poprawę samopoczucia i zwiększenie motywacji do działań.",
+        " W parku pacjenci mieli okazję do zabawy z psem i przebywania na świeżym powietrzu, co stanowiło ważny element terapii. Wspólne spędzenie czasu z psem pomagało także w budowaniu relacji międzyludzkich i integracji z grupą. Tego typu terapia była częścią kompleksowego programu leczenia i rehabilitacji prowadzonego w zakładzie, który stawiał na terapię zajęciową i psychologiczną, aby pacjenci odzyskali pełną sprawność oraz zmotywowani byli do powrotu do samodzielności."
+      ],
+      "images": [
+        "/static/events/2008/dogoterapia/1.jpg",
+        "/static/events/2008/dogoterapia/2.jpg",
+        "/static/events/2008/dogoterapia/3.jpg",
+        "/static/events/2008/dogoterapia/4.jpg"
+      ]
     }
   ],
   "2009": [
@@ -319,6 +367,15 @@
         "/static/events/2012/projekt-uniwersytet-zmyslow/7.jpg",
         "/static/events/2012/projekt-uniwersytet-zmyslow/8.jpg"
       ]
+    },
+    {
+      "date": "07-2012",
+      "title": "Wizyta pracowników służby zdrowia z Ukrainy",
+      "description": [
+        "W lipcu 2012 roku pracownicy służby zdrowia z Ukrainy odwiedzili Zakład Opiekuńczo-Leczniczy w Koprzywnicy. Wizyta ta miała na celu integrację i wymianę doświadczeń między pracownikami obu krajów. Podczas spotkania odbyły się rozmowy na temat sposobów leczenia, opieki nad pacjentami oraz organizacji pracy w placówkach medycznych.",
+        "Po wizycie przeprowadzono również ocenę jakości pracy i funkcjonowania zakładu przez gości z Ukrainy. W ramach wizyty odbył się również poczęstunek, który umożliwił dalszą integrację między pracownikami z obu krajów. Wizyta ta stanowiła ważny krok w rozwijaniu współpracy między Polską a Ukrainą w dziedzinie służby zdrowia oraz pozwoliła na zdobycie nowych doświadczeń i wiedzy przez pracowników obu placówek medycznych."
+      ],
+      "images": ["/static/events/2012/wizyta-z-ukrainy/1.jpg"]
     }
   ],
   "2013": [
@@ -381,6 +438,22 @@
       ]
     }
   ],
+  "2016": [
+    {
+      "date": "30-11-2016",
+      "title": "Koncert zespolu „Powiślanie”",
+      "description": [
+        "W dniu 30 listopada 2016 roku w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy odbył się koncert zespołu „Powiślanie” z okazji święta Andrzejek. Pacjenci oraz personel mieli okazję wysłuchać muzyki i spędzić czas w miłej atmosferze.",
+        " Zespół „Powiślanie” zagrał wiele znanych piosenek, które z pewnością wprowadziły słuchaczy w dobry nastrój. Koncert był świetną okazją do odskoczni od codziennych obowiązków oraz integracji między pacjentami a personelem."
+      ],
+      "images": [
+        "/static/events/2016/koncert-powislanie/1.jpg",
+        "/static/events/2016/koncert-powislanie/2.jpg",
+        "/static/events/2016/koncert-powislanie/3.jpg",
+        "/static/events/2016/koncert-powislanie/4.jpg"
+      ]
+    }
+  ],
   "2017": [
     {
       "date": "20-02-2017",
@@ -402,6 +475,18 @@
     }
   ],
   "2018": [
+    {
+      "date": "21-02-2018",
+      "title": "Wizyta wojewody świętokrzyskiego Agaty Wojtyszek",
+      "description": [
+        "W dniu 21 lutego 2018 roku odbyła się wizyta wojewody świętokrzyskiego Agaty Wojtyszek w Zakładzie Opiekuńczo Leczniczym w Koprzywnicy. Wojewoda została powitana przez dyrektora placówki oraz personel medyczny. Podczas wizyty odbyła się rozmowa na temat funkcjonowania placówki oraz jej potrzeb.",
+        "Wojewoda Wojtyszek odwiedziła także oddziały i porozmawiała z pacjentami, wyrażając swoje zainteresowanie ich stanem zdrowia i warunkami pobytu w zakładzie. Wizyta wojewody była okazją do przedstawienia działań podejmowanych przez województwo świętokrzyskie na rzecz poprawy opieki zdrowotnej w regionie."
+      ],
+      "images": [
+        "/static/events/2018/agata-wojtyszek/1.jpg",
+        "/static/events/2018/agata-wojtyszek/2.jpg"
+      ]
+    },
     {
       "date": "23-09-2018",
       "title": "Uroczystość 50-lecia Ośrodka Zdrowia i 15-lecia Zakładu Opiekuńczo-Leczniczego",
@@ -527,6 +612,21 @@
         "/static/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/7.jpg",
         "/static/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/8.jpg",
         "/static/events/2022/wizyta-biskupa-krzysztofa-nitkiewicza/9.jpg"
+      ]
+    }
+  ],
+  "2023": [
+    {
+      "date": "11-03-2023",
+      "title": "Laur Kobieta 2023",
+      "description": [
+        "Kierownik Zakładu Opiekuńczo-Leczniczego w Koprzywnicy, Lucyna Majkowska, została uhonorowana tytułem „Kobieta 2023” w kategorii zdrowie podczas gali finałowej drugiej edycji „Kobieta 2023” w Starachowicach. Nagrody przyznano w dziesięciu kategoriach, takich jak kultura, sztuka, sport, biznes, edukacja, zdrowie. Gala odbyła się w hotelu Europa i była poświęcona niezwykłym kobietom z województwa świętokrzyskiego.",
+        "Tytuł „Kobieta 2023” to zaszczytne wyróżnienie dla Lucyny Majkowskiej za jej wkład w rozwój Zakładu Opiekuńczo-Leczniczego w Koprzywnicy oraz jej pozytywny wpływ na życie pacjentów i ich rodzin. Patronat nad uroczystością sprawowali m.in. Marszałek Sejmu Rzeczypospolitej Polskiej Elżbieta Witek oraz Marszałek Województwa Andrzej Bętkowski."
+      ],
+      "images": [
+        "/static/events/2023/laur/1.jpg",
+        "/static/events/2023/laur/2.jpg",
+        "/static/events/2023/laur/3.jpg"
       ]
     }
   ]

@@ -32,7 +32,6 @@ html {
   h1 {
     @apply text-4xl sm:text-5xl md:text-6xl;
   }
-  /* font-[Raleway] */
   h2 {
     @apply text-3xl sm:text-4xl;
   }
@@ -40,10 +39,6 @@ html {
   li {
     @apply cursor-pointer;
   }
-
-  /* button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
-  } */
 }
 @layer utilities {
   .btn-main-primary {
@@ -80,7 +75,7 @@ html {
 
   --btn-color-primary: #0ba597;
   --btn-color-primary-hover: #245a55;
-  /* 1cb6a8 */
+
   --btn-color-secondary: #f4fdfc;
   --btn-color-secondary-hover: #ffffff;
 
@@ -242,4 +237,31 @@ html {
   100% {
     transform: scale(1.1); /* końcowy rozmiar obrazka */
   }
+}
+
+.share-modal-enter {
+  opacity: 0;
+  transform: translateX(20%);
+}
+
+.share-modal-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 125ms ease-out;
+}
+
+.share-modal-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.share-modal-exit-active {
+  opacity: 0;
+  transform: translateX(20%);
+  transition: all 125ms ease-out;
+}
+
+.slide-in-enter {
+  opacity: 0;
+  transform: rotate(90deg);
 }

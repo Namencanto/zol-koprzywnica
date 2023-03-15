@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import Navbar from "src/components/Navbar";
 import Image from "next/image";
 import CheckOthers from "src/components/WydarzeniaPageComponents/CheckOthers";
@@ -11,8 +11,14 @@ import { Button } from "@mui/material";
 import Link from "next/link";
 import Head from "next/head";
 import { generateFriendlyLink } from "src/components/WydarzeniaPageComponents/generateFriendlyLink";
+import ShareButtons from "src/components/WydarzeniaPageComponents/ShareButtons";
+import { useRouter } from "next/router";
 
 const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
+  // current url for share buttons
+  const router = useRouter();
+  const currentUrl = `https://www.zol-koprzywnica.pl${router.asPath}`;
+
   const images = useMemo(() => event[0].images, [event]);
 
   const [displayImage, setDisplayImage] = useState<boolean>(false);
@@ -65,12 +71,15 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
         <h1 className="text-3xl sm:text-5xl font-normal mb-6 text-center">
           {event[0].title}
         </h1>
-        <time
-          className="text-xl sm:text-2xl text-primary"
-          dateTime={event[0].date}
-        >
-          {event[0].date}
-        </time>
+        <div className="flex items-center flex-wrap">
+          <time
+            className="text-xl sm:text-2xl text-primary"
+            dateTime={event[0].date}
+          >
+            {event[0].date}
+          </time>
+          <ShareButtons url={currentUrl} />
+        </div>
         {/* Long component case */}
         {isLongComponent ? (
           <div className="flex flex-col md:flex-row items-center pt-12 mb-10">
@@ -155,7 +164,7 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
                   }}
                 >
                   <Image
-                    className="object-cover h-48 md:h-64"
+                    className="object-cover w-full h-48 md:h-64"
                     id={i.toString()}
                     src={image}
                     alt={`Zdjęcie ${i + 1} galerii z wydarzenia ${
@@ -239,3 +248,24 @@ export const getStaticProps: GetStaticProps<Props, Params> = async ({
 };
 
 export default Event;
+
+{
+  /* <div className="absolute right-[2rem] xl:relative sm:max-w-[1240px]">
+        <IoShareSocialOutline
+          role="button"
+          aria-label="Kliknij by rozwinąć sekcję udostępniania wydarzenia"
+          size={50}
+          className="z-20 absolute right-0 ml-auto bg-background-tertiary rounded-[50%] p-[0.75rem] cursor-pointer duration-300 ease-in-out transform hover:scale-110"
+          onClick={handleClick}
+        />
+        <CSSTransition
+          in={modalIsVisible}
+          classNames="share-modal"
+          timeout={300}
+          unmountOnExit
+        >
+          <section
+            className="absolute top-16 right-0 sm:top-0 sm:right-16 flex flex-col items-center justify-centerp-4 rounded-lg max-w-sm"
+            aria-label="Udostępnij wydarzenie na wybranych mediach społecznościowych lub poprzez email"
+          ></section> */
+}
