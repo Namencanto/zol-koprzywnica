@@ -85,8 +85,8 @@ const About: React.FC = () => {
               jest organizacją, która angażuje się w pomoc ludziom cierpiącym na
               chorobę Alzheimera. Zarząd stowarzyszenia jest organem, który
               kieruje działalnością organizacji, podejmuje decyzje i
-              reprezentuje stowarzyszenie na zewnątrz. W skład zarządu wchodzi
-              pięć osób:
+              reprezentuje stowarzyszenie na zewnątrz. W skład zarządu wchodzą
+              trzy osoby:
             </p>
             <ul className="list-disc list-inside mb-4">
               <li>Prezes - lek. med. Marek Majkowski</li>

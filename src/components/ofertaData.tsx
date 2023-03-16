@@ -43,11 +43,10 @@ export const services: Service[] = [
   {
     title: "Rehabilitacja",
     brief:
-      "W zakładzie opiekuńczo-leczniczym znajdują się sale rehabilitacji UGUL, gdzie pacjenci mają dostęp do różnorodnych form rehabilitacji, takich jak terapia zajęciowa, fizjoterapia, terapia przy łóżkach oraz spacery. Dodatkowo, w salach rehabilitacji znajdują się rowerki stacjonarne, a także dostępna jest fizykoterapia.",
+      "W zakładzie opiekuńczo-leczniczym oferowane są różnorodne formy rehabilitacji, takie jak terapie zajęciowe, fizjoterapia, igłoterapia, terapia przy łóżkach oraz masaże, które pomagają pacjentom w powrocie do sprawności fizycznej oraz lepszej kondycji psychofizycznej.",
     description: [
-      "W zakładzie opiekuńczo-leczniczym pacjenci mają dostęp do różnorodnych form rehabilitacji, które pomagają w powrocie do sprawności fizycznej oraz lepszej kondycji psychofizycznej. W salach rehabilitacji UGUL znajdują się specjalne kabiny, gdzie przeprowadzane są terapie zajęciowe, które mają na celu pobudzenie zainteresowań oraz aktywizację umysłową pacjentów.",
-      "W ramach terapii zajęciowej pacjenci mogą uczestniczyć w różnych zajęciach, takich jak malowanie, czy praca z papierem. Dodatkowo, w salach rehabilitacji dostępna jest fizjoterapia, która pomaga w rehabilitacji narządu ruchu oraz poprawie funkcjonowania mięśni i stawów. Pacjenci mają również dostęp do terapii przy łóżkach, która pozwala na pracę z pacjentem w pozycji leżącej, gdy pacjent jest zbyt osłabiony, by wstawać. W salach rehabilitacyjnych znajdują się także rowerki stacjonarne, które pozwalają na poprawę kondycji fizycznej i pracy serca. ",
-      "Dostępna jest również fizykoterapia, która wykorzystuje różne formy energii, takie jak prąd, promieniowanie czy magnetyzm, w celu leczenia chorób oraz dolegliwości. Oprócz ćwiczeń w salach rehabilitacji, pacjenci mają również możliwość udziału w spacerach na terenie zakładu, co pozwala na poprawę kondycji fizycznej oraz psychicznej. Dzięki różnorodnym formom rehabilitacji, pacjenci mogą skutecznie poprawić swoją sprawność oraz jakość życia.",
+      "W zakładzie opiekuńczo-leczniczym oferowane są różnorodne formy rehabilitacji, które pomagają pacjentom w powrocie do sprawności fizycznej oraz lepszej kondycji psychofizycznej. Przeprowadzane są terapie zajęciowe, takie jak malowanie czy praca z papierem, które mają na celu pobudzenie zainteresowań oraz aktywizację umysłową pacjentów.",
+      "Dostępna jest także fizjoterapia, terapia przy łóżkach oraz rowerki stacjonarne, które pozwalają na poprawę kondycji fizycznej i pracy serca. Pacjenci mogą również skorzystać z fizykoterapii, spacerów po terenie zakładu, igłoterapii oraz masażu bańką chińską, które pomagają w leczeniu różnych dolegliwości, takich jak bóle mięśniowo-szkieletowe czy cellulit. Dzięki tym formom rehabilitacji pacjenci mogą poprawić swoją sprawność oraz jakość życia.",
     ],
     photos: [
       RehabilitacjaOfferImage1,
