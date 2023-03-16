@@ -29,6 +29,8 @@ const Home: React.FC<Events> = ({ allEvents }) => {
         <meta property="og:image" content="/static/zaklad.jpg" />
         <meta name="twitter:card" content="/static/zaklad.jpg" />
         <meta name="twitter:image" content="/static/zaklad.jpg" />
+
+        <meta name="msvalidate.01" content="F332D90A7AC1754375C7CE550439574B" />
       </Head>
 
       <Navbar />
