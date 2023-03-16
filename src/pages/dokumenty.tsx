@@ -9,7 +9,6 @@ import { Transition } from "react-transition-group";
 import { useState } from "react";
 import Link from "next/link";
 import Head from "next/head";
-import { contactData } from "src/static/contactData";
 const duration = 300;
 
 const defaultStyle = {
@@ -86,9 +85,7 @@ const DocumentDownload = () => {
           name="keywords"
           content="dokumenty, zakład opiekuńczo-leczniczy, pacjenci, opieka, medycyna"
         />
-        <meta name="author" content={contactData.author} />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <meta
           property="og:title"
           content="Dokumenty zakładu opiekuńczo-leczniczego dla pacjentów"

@@ -26,9 +26,9 @@ const Home: React.FC<Events> = ({ allEvents }) => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./" />
-        <meta property="og:image" content="../../public/images/zaklad.jpg" />
-        <meta name="twitter:card" content="../../public/images/zaklad.jpg" />
-        <meta name="twitter:image" content="../../public/images/zaklad.jpg" />
+        <meta property="og:image" content="/images/zaklad.jpg" />
+        <meta name="twitter:card" content="/images/zaklad.jpg" />
+        <meta name="twitter:image" content="/images/zaklad.jpg" />
       </Head>
 
       <Navbar />

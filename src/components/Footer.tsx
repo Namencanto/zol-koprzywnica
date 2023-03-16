@@ -31,35 +31,35 @@ const Footer = () => {
             <p className="text-lg font-bold tracking-wide text-gray-300">
               Kontakt
             </p>
-            <div className="flex flex-wrap ">
-              <p className="mr-1 text-gray-200">Tel.</p>
-              <Link
-                href={`tel:${contactData.landLineNumbers[0]}`}
-                aria-label="Telefon stacjonarny"
-                title="Telefon stacjonarny"
-                className="text-gray-200 transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 mr-2"
-              >
-                {contactData.landLineNumbers[0]},
-              </Link>
-              <Link
-                href={`tel:${contactData.landLineNumbers[1]}`}
-                aria-label="Telefon stacjonarny 2"
-                title="Telefon stacjonarny 2"
-                className="text-gray-200 transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                {contactData.landLineNumbers[1]}
-              </Link>
-            </div>
 
             <div className="flex flex-wrap ">
-              <p className="mr-1 text-gray-200">Tel. komórkowy:</p>
+              <p className="mr-1 text-gray-200">Tel:</p>
               <Link
-                href={`tel:${contactData.phoneNumber}`}
-                aria-label="Telefon komórkowy"
-                title="Telefon komórkowy"
+                href={`tel:${contactData.landLineNumber}`}
+                aria-label="Telefon stacjonarny"
+                title="Telefon stacjonarny"
                 className="text-gray-200 transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                {contactData.phoneNumber}
+                {contactData.landLineNumber}
+              </Link>
+            </div>
+            <div className="flex flex-wrap ">
+              <p className="mr-1 text-gray-200">Tel. Komórkowy:</p>
+              <Link
+                href={`tel:${contactData.phoneNumbers[0]}`}
+                aria-label="Telefon komórkowy"
+                title="Telefon komórkowy"
+                className="text-gray-200 transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 mr-2"
+              >
+                {contactData.phoneNumbers[0]},
+              </Link>
+              <Link
+                href={`tel:${contactData.phoneNumbers[1]}`}
+                aria-label="Telefon komórkowy 2"
+                title="Telefon komórkowy 2"
+                className="text-gray-200 transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                {contactData.phoneNumbers[1]}
               </Link>
             </div>
             <div className="flex flex-wrap ">

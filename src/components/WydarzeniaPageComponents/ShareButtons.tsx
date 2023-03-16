@@ -13,6 +13,8 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import { FaTimes } from "react-icons/fa";
 import { CSSTransition } from "react-transition-group";
 import { ThemeContext } from "src/context/themeContext";
+import { event } from "nextjs-google-analytics";
+
 interface ShareButtonsProps {
   url: string;
   title: string;
@@ -20,8 +22,9 @@ interface ShareButtonsProps {
 
 const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
   const { theme } = useContext(ThemeContext);
-  const [isMobile, setIsMobile] = useState<Boolean>(false);
 
+  // Checking if mobile version for messenger button
+  const [isMobile, setIsMobile] = useState<Boolean>(false);
   useEffect(() => {
     if (typeof window !== "undefined") {
       if (navigator) {
@@ -30,6 +33,8 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
     }
   }, []);
   const appId = process.env.NEXT_PUBLIC_FB_APPID;
+
+  // Mobile version of sharing with messenger
   const handleClickMessenger = () => {
     const messengerLink = `fb-messenger://share?app_id=${appId}&link=${encodeURIComponent(
       url
@@ -40,6 +45,18 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
 
   const handleClick = () => {
     setButtonsAreVisible(!buttonsAreVisible);
+  };
+
+  // Google Analytics handlers for tracking how many users have shared the event
+  const handleShareGoogleAnalytics = (type: string) => {
+    event("Share", {
+      label: `Shared by ${type}`,
+    });
+  };
+  const handleOpenShareGoogleAnalytics = () => {
+    event("Share", {
+      label: `Opened share buttons`,
+    });
   };
 
   return (
@@ -58,6 +75,7 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
             />
           ) : (
             <IoShareSocialOutline
+              onClick={handleOpenShareGoogleAnalytics}
               size={25}
               style={{ color: theme === "light" ? "#444" : "#fff" }}
             />
@@ -76,6 +94,9 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
           >
             <div className="z-10 flex sm:flex-row justify-center">
               <FacebookShareButton
+                onClick={() => {
+                  handleShareGoogleAnalytics("Facebook");
+                }}
                 className="mr-4"
                 url={url}
                 hashtag="#zolkoprzywnica"
@@ -86,13 +107,19 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
               {isMobile ? (
                 <button
                   className="mr-4 "
-                  onClick={handleClickMessenger}
+                  onClick={() => {
+                    handleShareGoogleAnalytics("Messenger");
+                    handleClickMessenger();
+                  }}
                   title="Udostępnij przez Messenger"
                 >
                   <FacebookMessengerIcon size={40} round />
                 </button>
               ) : typeof appId === "string" ? (
                 <FacebookMessengerShareButton
+                  onClick={() => {
+                    handleShareGoogleAnalytics("Messenger");
+                  }}
                   className="mr-4 "
                   url={url}
                   appId={appId}
@@ -102,16 +129,25 @@ const ShareButtons: React.FC<ShareButtonsProps> = ({ url, title }) => {
                 </FacebookMessengerShareButton>
               ) : null}
               <TwitterShareButton
+                onClick={() => {
+                  handleShareGoogleAnalytics("Twitter");
+                }}
                 className="mr-4"
                 url={url}
-                title="Udostępnij przez Twittera"
+                title="Sprawdzcie wydarzenie w Zakładzie Opiekuńczo-Leczniczym w Koprzywnicy!"
+                aria-label="Udostępnij przez Twittera"
+                hashtags={["zolkoprzywnica"]}
               >
                 <TwitterIcon size={40} round />
               </TwitterShareButton>
               <EmailShareButton
+                onClick={() => {
+                  handleShareGoogleAnalytics("Email");
+                }}
                 url={url}
                 subject={`Sprawdź wydarzenie ${title} Zakładu Opiekuńczo-Leczniczego`}
                 body={`Witaj! Sprawdź wydarzenie ${title} Zakładu Opiekuńczo-Leczniczego. Oto link do wydarzenia:`}
+                title="Udostępnij przez Email"
               >
                 <EmailIcon size={40} round />
               </EmailShareButton>

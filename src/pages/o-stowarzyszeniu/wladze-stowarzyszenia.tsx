@@ -5,6 +5,7 @@ import Footer from "src/components/Footer";
 import CompanyImage from "@/static/slider-3.jpg";
 import Link from "next/link";
 import Head from "next/head";
+import RightSide from "src/components/StowarzyszeniePageComponents/RightSide";
 const About: React.FC = () => {
   return (
     <>
@@ -27,18 +28,9 @@ const About: React.FC = () => {
           content="./o-stowarzyszeniu/wladze-stowarzyszenia"
         />
 
-        <meta
-          property="og:image"
-          content="../../../public/images/slider-3.jpg"
-        />
-        <meta
-          name="twitter:card"
-          content="../../../public/images/slider-3.jpg"
-        />
-        <meta
-          name="twitter:image"
-          content="../../../public/images/slider-3.jpg"
-        />
+        <meta property="og:image" content="/images/slider-3.jpg" />
+        <meta name="twitter:card" content="/images/slider-3.jpg" />
+        <meta name="twitter:image" content="/images/slider-3.jpg" />
       </Head>
 
       <Navbar />
@@ -98,10 +90,8 @@ const About: React.FC = () => {
             </p>
             <ul className="list-disc list-inside mb-4">
               <li>Prezes - lek. med. Marek Majkowski</li>
-              <li>Wiceprezes - dr n. med. Piotr Sobolewski</li>
               <li>Sekretarz - lek. med. Dominik Machaj</li>
               <li>Skarbnik - Henryka Prewentowska</li>
-              <li>Członek Zarządu - lek. stom. Alicja Magda</li>
             </ul>
             <p className="text-lg leading-relaxed">
               Stowarzyszenie posiada także Komisję Rewizyjną, której zadaniem
@@ -113,19 +103,10 @@ const About: React.FC = () => {
               i ich rodzin.
             </p>
           </div>
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
-            <div className="overflow-hidden border-4 border-gray-200 hover:border-btn-primary transform hover:scale-105 transition-all duration-500">
-              <div className="perspective-1000">
-                <div className="transform rotate-x-20 rotate-y-10">
-                  <Image
-                    src={CompanyImage}
-                    alt="Zdjęcie Stowarzyszenia"
-                    className="h-96 w-auto object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <RightSide
+            image={CompanyImage}
+            altContent="Widok na zakład opiekuńczo-leczniczy od tyłu"
+          />
         </div>
       </div>
 

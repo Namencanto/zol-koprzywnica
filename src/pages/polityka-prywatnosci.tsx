@@ -94,35 +94,35 @@ const PolitykaPrywatnosci: NextPage = () => {
                 </Link>
                 <br />
                 <Link
-                  href={`tel:${contactData.landLineNumbers[0]}`}
-                  title="Zadzwoń"
+                  href={`tel:${contactData.landLineNumber}`}
+                  title="Telefon stacjonarny"
                   className="text-sm text-primary"
                 >
                   Telefon:{" "}
                   <span className="font-semibold">
-                    {contactData.landLineNumbers[0]}
+                    {contactData.landLineNumber}
                   </span>
                 </Link>
                 <br />
                 <Link
-                  href={`tel:${contactData.landLineNumbers[0]}`}
-                  title="Zadzwoń"
-                  className="text-sm text-primary"
-                >
-                  Telefon 2:{" "}
-                  <span className="font-semibold">
-                    {contactData.landLineNumbers[1]}
-                  </span>
-                </Link>
-                <br />
-                <Link
-                  href={`tel:${contactData.landLineNumbers[1]}`}
-                  title="Zadzwoń"
+                  href={`tel:${contactData.phoneNumbers[0]}`}
+                  title="Telefon komórkowy"
                   className="text-sm text-primary"
                 >
                   Telefon komórkowy:{" "}
                   <span className="font-semibold">
-                    {contactData.phoneNumber}
+                    {contactData.phoneNumbers[0]}
+                  </span>
+                </Link>
+                <br />
+                <Link
+                  href={`tel:${contactData.phoneNumbers[1]}`}
+                  title="Telefon komórkowy 2"
+                  className="text-sm text-primary"
+                >
+                  Telefon komórkowy 2:{" "}
+                  <span className="font-semibold">
+                    {contactData.phoneNumbers[1]}
                   </span>
                 </Link>
               </div>

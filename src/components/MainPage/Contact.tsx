@@ -411,34 +411,36 @@ const Contact = () => {
                     <div className="flex">
                       <p className="mr-1 text-text-gray-300">Tel:</p>
                       <Link
-                        href={`tel:${contactData.landLineNumbers[0]}`}
-                        aria-label="Telefon komórkowy"
-                        title="Telefon komórkowy"
+                        href={`tel:${contactData.landLineNumber}`}
+                        aria-label="Telefon stacjonarny"
+                        title="Telefon stacjonarny"
                         className="text-text-gray-300"
                       >
-                        {contactData.landLineNumbers[0]}
+                        {contactData.landLineNumber}
                       </Link>
                     </div>
                     <div className="flex">
-                      <p className="mr-1 text-text-gray-300">Tel 2:</p>
+                      <p className="mr-1 text-text-gray-300">Tel. komórkowy:</p>
                       <Link
-                        href={`tel:${contactData.landLineNumbers[1]}`}
+                        href={`tel:${contactData.phoneNumbers[0]}`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
                         className="text-text-gray-300"
                       >
-                        {contactData.landLineNumbers[1]}
+                        {contactData.phoneNumbers[0]}
                       </Link>
                     </div>
                     <div className="flex">
-                      <p className="mr-1 text-text-gray-300">Tel komórkowy:</p>
+                      <p className="mr-1 text-text-gray-300">
+                        Tel. komórkowy 2:
+                      </p>
                       <Link
-                        href={`tel:${contactData.phoneNumber}`}
-                        aria-label="Telefon komórkowy"
-                        title="Telefon komórkowy"
+                        href={`tel:${contactData.phoneNumbers[1]}`}
+                        aria-label="Telefon komórkowy 2"
+                        title="Telefon komórkowy 2"
                         className="text-text-gray-300"
                       >
-                        {contactData.phoneNumber}
+                        {contactData.phoneNumbers[1]}
                       </Link>
                     </div>
                     <div className="flex flex-wrap break-all">

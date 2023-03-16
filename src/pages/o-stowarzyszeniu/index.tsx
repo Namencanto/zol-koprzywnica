@@ -5,7 +5,8 @@ import Footer from "src/components/Footer";
 import CompanyImage from "@/static/zaklad.jpg";
 import Link from "next/link";
 import Head from "next/head";
-
+import RightSide from "src/components/StowarzyszeniePageComponents/RightSide";
+import RightSideImage from "@/static/o-stowarzyszeniu.jpg";
 const About: React.FC = () => {
   return (
     <>
@@ -24,10 +25,6 @@ const About: React.FC = () => {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./o-stowarzyszeniu" />
-
-        <meta property="og:image" content="../../public/images/zaklad.jpg" />
-        <meta name="twitter:card" content="../../public/images/zaklad.jpg" />
-        <meta name="twitter:image" content="../../public/images/zaklad.jpg" />
       </Head>
 
       <Navbar />
@@ -112,19 +109,10 @@ const About: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
-            <div className="overflow-hidden border-4 border-gray-200 hover:border-btn-primary transform hover:scale-105 transition-all duration-500">
-              <div className="perspective-1000">
-                <div className="transform rotate-x-20 rotate-y-10">
-                  <Image
-                    src={CompanyImage}
-                    alt="Zdjęcie Stowarzyszenia"
-                    className="h-96 w-auto object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <RightSide
+            image={RightSideImage}
+            altContent="Zdjęcie pokazujące nasz zespół przy wejściu do zakładu"
+          />
         </div>
       </div>
 

@@ -1,7 +1,7 @@
 export const contactData = {
   email: "alzheimer.koprzywnica@interia.pl",
-  phoneNumber: "781 828 223",
-  landLineNumbers: ["158 476 114", "158 477 030"],
+  phoneNumbers: ["509 670 212", "781 828 223"],
+  landLineNumber: "15 847 70 30",
   location: ["ul. Szkolna 8", "27-660 Koprzywnica"],
   operatorName:
     "Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera w Koprzywnicy",

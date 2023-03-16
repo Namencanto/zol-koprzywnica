@@ -44,14 +44,13 @@ const Offer: FunctionComponent = () => {
           property="og:description"
           content="Zapraszamy do skorzystania z naszej oferty rehabilitacji w Zakładzie Opiekuńczo-Leczniczym. Oferujemy szeroki zakres zabiegów rehabilitacyjnych, dostosowanych do potrzeb pacjentów."
         />
-        <meta property="og:image" content="../../public/images/oferta.jpg" />
+        <meta property="og:image" content="/images/oferta.jpg" />
         <meta
           property="og:image:alt"
           content="Zdjęcie przedstawiające jedną z sal rehabilitacji"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="../../public/images/oferta.jpg" />
+
+        <meta name="twitter:card" content="/images/oferta.jpg" />
         <meta
           name="twitter:title"
           content="Oferta rehabilitacji - Zakład Opiekuńczo-Leczniczy"
@@ -60,7 +59,7 @@ const Offer: FunctionComponent = () => {
           name="twitter:description"
           content="Zapraszamy do skorzystania z naszej oferty rehabilitacji w Zakładzie Opiekuńczo-Leczniczym. Oferujemy szeroki zakres zabiegów rehabilitacyjnych, dostosowanych do potrzeb pacjentów."
         />
-        <meta name="twitter:image" content="../../public/images/oferta.jpg" />
+        <meta name="twitter:image" content="/images/oferta.jpg" />
       </Head>
       <div
         tabIndex={selectedImage !== 0 ? -1 : 0}
@@ -154,19 +153,26 @@ const Offer: FunctionComponent = () => {
               >
                 <div
                   aria-modal="true"
-                  className="bg-background-secondary relative rounded-lg shadow-custom-lg p-8 max-w-screen-sm mx-4 my-8"
+                  className="bg-background-secondary relative rounded-lg shadow-custom-lg p-8 max-w-screen-md mx-4 my-8"
                   style={{ maxHeight: "calc(100vh - 16px)", overflowY: "auto" }}
                 >
-                  <div className="text-center">
+                  <div>
                     <h3
                       id="modal-title"
-                      className="text-2xl font-bold text-text-gray-800 mb-2"
+                      className="text-2xl text-center font-bold text-text-gray-800 mb-2"
                     >
                       {activeService.title}
                     </h3>
-                    <p className="text-base text-text-gray-700 mb-6">
-                      {activeService.description}
-                    </p>
+                    {activeService.description.map((text) => {
+                      return (
+                        <p
+                          key={text}
+                          className="text-base text-text-gray-700 mb-4"
+                        >
+                          {text}
+                        </p>
+                      );
+                    })}
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {activeService.title !== "Badania diagnostyczne" &&
@@ -192,7 +198,7 @@ const Offer: FunctionComponent = () => {
                             height={190}
                             width={210}
                             key={index}
-                            className=" w-full h-48 object-cover rounded-lg transform hover:scale-105 outline-none focus:scale-105 transition duration-500 ease-in-out"
+                            className="w-full h-48 object-cover rounded-lg transform hover:scale-105 outline-none focus:scale-105 transition duration-500 ease-in-out"
                             src={photo}
                             alt={activeService.title}
                           />

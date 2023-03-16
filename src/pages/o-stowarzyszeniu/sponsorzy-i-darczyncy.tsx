@@ -5,6 +5,7 @@ import Footer from "src/components/Footer";
 import CompanyImage from "@/static/slider-2.jpg";
 import Link from "next/link";
 import Head from "next/head";
+import RightSide from "src/components/StowarzyszeniePageComponents/RightSide";
 const About: React.FC = () => {
   return (
     <>
@@ -27,18 +28,9 @@ const About: React.FC = () => {
           content="./o-stowarzyszeniu/sponsorzy-i-darczyncy"
         />
 
-        <meta
-          property="og:image"
-          content="../../../public/images/slider-2.jpg"
-        />
-        <meta
-          name="twitter:card"
-          content="../../../public/images/slider-2.jpg"
-        />
-        <meta
-          name="twitter:image"
-          content="../../../public/images/slider-2.jpg"
-        />
+        <meta property="og:image" content="/images/slider-2.jpg" />
+        <meta name="twitter:card" content="/images/slider-2.jpg" />
+        <meta name="twitter:image" content="/images/slider-2.jpg" />
       </Head>
 
       <Navbar />
@@ -114,19 +106,10 @@ const About: React.FC = () => {
               przyczyńmy się do realizacji tak szczytnego celu.
             </p>
           </div>
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 flex justify-center">
-            <div className="overflow-hidden border-4 border-gray-200 hover:border-btn-primary transform hover:scale-105 transition-all duration-500">
-              <div className="perspective-1000">
-                <div className="transform rotate-x-20 rotate-y-10">
-                  <Image
-                    src={CompanyImage}
-                    alt="Zdjęcie Stowarzyszenia"
-                    className="h-96 w-auto object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+          <RightSide
+            image={CompanyImage}
+            altContent="Widok na fasadę zakładu opiekuńczo-leczniczego"
+          />
         </div>
       </div>
       <Footer />
