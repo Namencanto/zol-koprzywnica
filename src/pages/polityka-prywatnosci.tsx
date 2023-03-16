@@ -30,6 +30,9 @@ const PolitykaPrywatnosci: NextPage = () => {
           name="twitter:description"
           content="Zapoznaj się z naszą polityką prywatności. Dowiedz się, jakie informacje zbieramy i jak je wykorzystujemy."
         />
+        <meta property="og:image" content="/static/zaklad.jpg" />
+        <meta name="twitter:card" content="/static/zaklad.jpg" />
+        <meta name="twitter:image" content="/static/zaklad.jpg" />
       </Head>
       <div className="flex flex-col min-h-screen">
         <Navbar />

@@ -28,9 +28,9 @@ const About: React.FC = () => {
           content="./o-stowarzyszeniu/wladze-stowarzyszenia"
         />
 
-        <meta property="og:image" content="/images/slider-3.jpg" />
-        <meta name="twitter:card" content="/images/slider-3.jpg" />
-        <meta name="twitter:image" content="/images/slider-3.jpg" />
+        <meta property="og:image" content="/static/slider-3.jpg" />
+        <meta name="twitter:card" content="/static/slider-3.jpg" />
+        <meta name="twitter:image" content="/static/slider-3.jpg" />
       </Head>
 
       <Navbar />

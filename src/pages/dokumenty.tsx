@@ -94,6 +94,9 @@ const DocumentDownload = () => {
           property="og:description"
           content="Znajdź wszystkie niezbędne dokumenty związane z pobytem w naszym zakładzie opiekuńczo-leczniczym."
         />
+        <meta property="og:image" content="/static/zaklad.jpg" />
+        <meta name="twitter:card" content="/static/zaklad.jpg" />
+        <meta name="twitter:image" content="/static/zaklad.jpg" />
       </Head>
 
       <div className="flex flex-col min-h-screen">

@@ -18,10 +18,6 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="author" content={contactData.author} />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#134944" />
-
-        <meta property="og:image" content="/images/zaklad.jpg" />
-        <meta name="twitter:card" content="/images/zaklad.jpg" />
-        <meta name="twitter:image" content="/images/zaklad.jpg" />
       </Head>
       <ThemeProvider>
         {isProduction && <GoogleAnalytics strategy="lazyOnload" />}

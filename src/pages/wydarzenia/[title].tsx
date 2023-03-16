@@ -46,9 +46,9 @@ const Event: React.FC<Events> = ({ event, eventsForCheckOthers }) => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./o-stowarzyszeniu" />
 
-        <meta property="og:image" content={images && images[1]} />
-        <meta name="twitter:card" content={images && images[1]} />
-        <meta name="twitter:image" content={images && images[1]} />
+        {images && <meta property="og:image" content={images[1]} />}
+        {images && <meta name="twitter:card" content={images[1]} />}
+        {images && <meta name="twitter:image" content={images[1]} />}
       </Head>
       <Navbar />
       {images && images[1] ? (

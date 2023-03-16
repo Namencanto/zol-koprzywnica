@@ -25,6 +25,9 @@ const About: React.FC = () => {
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="./o-stowarzyszeniu" />
+        <meta property="og:image" content="/static/o-stowarzyszeniu.jpg" />
+        <meta name="twitter:card" content="/static/o-stowarzyszeniu.jpg" />
+        <meta name="twitter:image" content="/static/o-stowarzyszeniu.jpg" />
       </Head>
 
       <Navbar />

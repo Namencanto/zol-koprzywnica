@@ -44,13 +44,11 @@ const Offer: FunctionComponent = () => {
           property="og:description"
           content="Zapraszamy do skorzystania z naszej oferty rehabilitacji w Zakładzie Opiekuńczo-Leczniczym. Oferujemy szeroki zakres zabiegów rehabilitacyjnych, dostosowanych do potrzeb pacjentów."
         />
-        <meta property="og:image" content="/images/oferta.jpg" />
         <meta
           property="og:image:alt"
           content="Zdjęcie przedstawiające jedną z sal rehabilitacji"
         />
 
-        <meta name="twitter:card" content="/images/oferta.jpg" />
         <meta
           name="twitter:title"
           content="Oferta rehabilitacji - Zakład Opiekuńczo-Leczniczy"
@@ -59,7 +57,9 @@ const Offer: FunctionComponent = () => {
           name="twitter:description"
           content="Zapraszamy do skorzystania z naszej oferty rehabilitacji w Zakładzie Opiekuńczo-Leczniczym. Oferujemy szeroki zakres zabiegów rehabilitacyjnych, dostosowanych do potrzeb pacjentów."
         />
-        <meta name="twitter:image" content="/images/oferta.jpg" />
+        <meta property="og:image" content="/static/oferta.jpg" />
+        <meta name="twitter:card" content="/static/oferta.jpg" />
+        <meta name="twitter:image" content="/static/oferta.jpg" />
       </Head>
       <div
         tabIndex={selectedImage !== 0 ? -1 : 0}
