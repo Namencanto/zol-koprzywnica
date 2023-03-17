@@ -373,9 +373,9 @@ const Contact = () => {
               }`}
             >
               <div className="flex flex-col text-white">
-                <h1 className="font-bold uppercase text-4xl my-4 text-text-gray-200 break-words">
+                <h2 className="font-bold uppercase text-4xl my-4 text-text-gray-200 break-words">
                   Skontaktuj się z nami
-                </h1>
+                </h2>
                 <p className="text-text-gray-300">
                   Zadzwoń do nas lub napisz wiadomość poprzez formularz lub
                   e-mail

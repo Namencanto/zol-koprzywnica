@@ -18,7 +18,7 @@ const Home: React.FC<Events> = ({ allEvents }) => {
         <title>Zakład Opiekuńczo-Leczniczy w Koprzywnicy</title>
         <meta
           name="description"
-          content="Zakład opiekuńczo-leczniczy w Koprzywnicy - oferujemy kompleksowe usługi opiekuńcze i medyczne dla osób starszych i niepełnosprawnych. Nasza placówka zapewnia wysoką jakość opieki w komfortowych warunkach. Zapraszamy do zapoznania się z naszą ofertą."
+          content="Oferujemy kompleksowe usługi opiekuńcze i medyczne dla osób starszych i niepełnosprawnych. Zapraszamy do zapoznania się z naszą ofertą."
         />
         <meta
           name="keywords"
