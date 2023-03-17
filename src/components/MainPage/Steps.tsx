@@ -20,8 +20,8 @@ const Steps = () => {
                   src={Step1}
                   alt="pierwszy krok ilustracja"
                 />
-                <h3 className="text-xl font-semibold mb-4">
-                  Krok 1: Skierowanie do zakładu opiekuńczo-leczniczego
+                <h3 className="text-xl font-semibold my-4">
+                  Krok 1: Skierowanie
                 </h3>
                 <p className="text-text-gray-600 leading-relaxed">
                   Pacjent lub jego rodzina zgłasza się do lekarza medycyny
@@ -39,8 +39,8 @@ const Steps = () => {
                   src={Step2}
                   alt="drugi krok ilustracja"
                 />
-                <h3 className="text-xl font-semibold mb-4">
-                  Krok 2: Dostarczenie dokumentów do zakładu
+                <h3 className="text-xl font-semibold my-4">
+                  Krok 2: Dostarczenie dokumentów
                 </h3>
                 <p className="text-text-gray-600 leading-relaxed">
                   Pacjent lub rodzina dostarcza dokumenty osobiście, pocztą lub
@@ -54,8 +54,8 @@ const Steps = () => {
                   src={Step3}
                   alt="trzeci krok ilustracja"
                 />
-                <h3 className="text-xl font-semibold mb-4">
-                  Krok 3: Oczekiwanie na przyjęcie do zakładu
+                <h3 className="text-xl font-semibold my-4">
+                  Krok 3: Oczekiwanie na przyjęcie
                 </h3>
                 <p className="text-text-gray-600 leading-relaxed">
                   Oczekiwanie na miejsce pacjent będzie umieszczony w kolejce

@@ -46,7 +46,7 @@ export const services: Service[] = [
       "W zakładzie opiekuńczo-leczniczym oferowane są różnorodne formy rehabilitacji, takie jak terapie zajęciowe, fizjoterapia, igłoterapia, terapia przy łóżkach oraz masaże, które pomagają pacjentom w powrocie do sprawności fizycznej oraz lepszej kondycji psychofizycznej.",
     description: [
       "W zakładzie opiekuńczo-leczniczym oferowane są różnorodne formy rehabilitacji, które pomagają pacjentom w powrocie do sprawności fizycznej oraz lepszej kondycji psychofizycznej. Przeprowadzane są terapie zajęciowe, takie jak malowanie czy praca z papierem, które mają na celu pobudzenie zainteresowań oraz aktywizację umysłową pacjentów.",
-      "Dostępna jest także fizjoterapia, terapia przy łóżkach oraz rowerki stacjonarne, które pozwalają na poprawę kondycji fizycznej i pracy serca. Pacjenci mogą również skorzystać z fizykoterapii, spacerów po terenie zakładu, igłoterapii oraz masażu bańką chińską, które pomagają w leczeniu różnych dolegliwości, takich jak bóle mięśniowo-szkieletowe czy cellulit. Dzięki tym formom rehabilitacji pacjenci mogą poprawić swoją sprawność oraz jakość życia.",
+      "Dostępna jest także fizjoterapia, terapia przy łóżkach oraz rowerki stacjonarne, które pozwalają na poprawę kondycji fizycznej i pracy serca. Pacjenci mogą również skorzystać z fizykoterapii, spacerów po terenie zakładu, igłoterapii oraz masażu bańką chińską, które pomagają w leczeniu różnych dolegliwości, takich jak bóle mięśniowo-szkieletowe czy zastoje limfatyczne. Dzięki tym formom rehabilitacji pacjenci mogą poprawić swoją sprawność oraz jakość życia.",
     ],
     photos: [
       RehabilitacjaOfferImage1,
