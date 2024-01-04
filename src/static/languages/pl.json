@@ -723,6 +723,27 @@
         "/static/events/2023/laur/2.jpg",
         "/static/events/2023/laur/3.jpg"
       ]
+    },
+    {
+      "date": "16-04-2023",
+      "title": "Uroczystość 20-lecia Zakładu Opiekuńczo-Leczniczego",
+      "description": [
+        "16 kwietnia 2023 roku, uroczystość 20-lecia Zakładu Opiekuńczo-Leczniczego w Koprzywnicy rozpoczęła się oficjalnym przywitaniem znakomitych gości przez założycieli Marka i Lucynę Majkowskich. Burmistrz Miasta i Gminy Koprzywnica, urzędnicy na różnych szczeblach administracji, Dyrektorzy Szkół, Banku oraz Starosta Powiatowy, wsparci przez Duchowieństwo Parafii Świętego Floriana i Matki Bożej Różańcowej, zgromadzili się, aby uczcić ten wyjątkowy jubileusz. Wspólnie z przedstawicielami społeczności lokalnej i pracownikami zakładu, przyjęli serdeczne powitania i listy gratulacyjne.",
+        "Po oficjalnych powitaniach nastąpił czas na bankiet w uroczystej Restauracji Jorgo. W trakcie bankietu goście delektowali się wyśmienitymi potrawami, tworząc wyjątkową atmosferę towarzyską. W trakcie tego wydarzenia dokonano także prezentacji historii 20-letniej działalności zakładu, ukazującej wkład, osiągnięcia oraz rozwój placówki.",
+        "Po bankiecie nastąpiła dyskusja, w trakcie której omawiano perspektywy i cele na przyszłość. Poczęstunek towarzyszył rozmowom, tworząc nieformalne środowisko do wymiany myśli i doświadczeń. Głównym punktem zakończenia uroczystości było wręczenie pamiątkowej statuetki wykonanej z okazji jubileuszu. Ta wyjątkowa statuetka, złożona z kamienia krzemieniowego, serca z bursztynu i podstawy z czarnego dębu, symbolizowała optymizm, oddanie dla pacjentów i trwałość działania personelu medycznego. Była to wyraz uznania dla założycieli oraz personelu, zachęcający do dalszej pracy na rzecz zdrowia społeczności."
+      ],
+      "images": [
+        "/static/events/2023/20-lecie/1.jpg",
+        "/static/events/2023/20-lecie/2.jpg",
+        "/static/events/2023/20-lecie/3.jpg",
+        "/static/events/2023/20-lecie/4.jpg",
+        "/static/events/2023/20-lecie/5.jpg",
+        "/static/events/2023/20-lecie/6.jpg",
+        "/static/events/2023/20-lecie/7.jpg",
+        "/static/events/2023/20-lecie/8.jpg",
+        "/static/events/2023/20-lecie/9.jpg",
+        "/static/events/2023/20-lecie/10.jpg"
+      ]
     }
   ]
 }
