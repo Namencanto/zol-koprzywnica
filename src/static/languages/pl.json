@@ -781,7 +781,9 @@
         "/static/events/2023/srebrny-krzyz-zaslugi/6.jpg",
         "/static/events/2023/srebrny-krzyz-zaslugi/7.jpg"
       ]
-    },
+    }
+  ],
+  "2024": [
     {
       "date": "30-03-2024",
       "title": "Życzenia Wielkanocne",
@@ -809,6 +811,14 @@
         "Źródło: Informacja prasowa dot. kwietniowej konferencji ADI"
       ],
       "images": ["/static/events/2024/polski-plan-alzheimerowski/1.jpg"]
+    },
+    {
+      "date": "17-12-2024",
+      "title": "Życzenia Bożonarodzeniowe",
+      "description": [
+        "W imieniu całego zespołu Zakładu Opiekuńczo-Leczniczego w Koprzywnicy, składamy najserdeczniejsze życzenia z okazji Świąt Bożego Narodzenia. Niech ten wyjątkowy czas przyniesie Państwu zdrowie, spokój oraz radość z dzielenia chwil z najbliższymi. Życzymy, aby magia Świąt wniosła do Waszych domów ciepło, nadzieję i miłość, a nadchodzący Nowy Rok był pełen sukcesów, szczęścia oraz spełnienia marzeń. Niech te Święta będą pełne rodzinnej atmosfery, odpoczynku od codziennych trosk i okazją do odnalezienia wewnętrznego spokoju i harmonii. Z najcieplejszymi myślami i życzeniami, Zespół ZOL w Koprzywnicy."
+      ],
+      "images": ["/static/events/2024/zyczenia-bozonarodzeniowe/1.jpg"]
     }
   ]
 }
