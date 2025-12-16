@@ -819,6 +819,23 @@
         "W imieniu całego zespołu Zakładu Opiekuńczo-Leczniczego w Koprzywnicy, składamy najserdeczniejsze życzenia z okazji Świąt Bożego Narodzenia. Niech ten wyjątkowy czas przyniesie Państwu zdrowie, spokój oraz radość z dzielenia chwil z najbliższymi. Życzymy, aby magia Świąt wniosła do Waszych domów ciepło, nadzieję i miłość, a nadchodzący Nowy Rok był pełen sukcesów, szczęścia oraz spełnienia marzeń. Niech te Święta będą pełne rodzinnej atmosfery, odpoczynku od codziennych trosk i okazją do odnalezienia wewnętrznego spokoju i harmonii. Z najcieplejszymi myślami i życzeniami, Zespół ZOL w Koprzywnicy."
       ],
       "images": ["/static/events/2024/zyczenia-bozonarodzeniowe/1.jpg"]
+    },
+    {
+      "date": "16-12-2025",
+      "title": "1 procent podatku na rzecz Stowarzyszenia Osób z Chorobą Alzheimera w Koprzywnicy",
+      "description": [
+        "Stowarzyszenie na Rzecz Osób z Chorobą Alzheimera w Koprzywnicy, posiadające status Organizacji Pożytku Publicznego, prowadzi działania na rzecz wsparcia osób z chorobami otępiennymi oraz ich opiekunów.",
+        "Przekazanie 1% podatku to realna forma pomocy, która umożliwia realizację działań opiekuńczych, terapeutycznych i społecznych. Zachęcamy do wsparcia naszej misji i wspólnego niesienia pomocy tym, którzy jej najbardziej potrzebują."
+      ],
+      "images": ["/static/events/2025/1-procent-alzheimer/1.png"]
+    },
+    {
+      "date": "17-12-2025",
+      "title": "Życzenia Bożonarodzeniowe 2025",
+      "description": [
+        "W imieniu całego zespołu Zakładu Opiekuńczo-Leczniczego w Koprzywnicy składamy serdeczne życzenia z okazji Świąt Bożego Narodzenia. Niech ten wyjątkowy czas będzie źródłem zdrowia, spokoju oraz radości płynącej ze wspólnie spędzonych chwil z najbliższymi. Życzymy, aby świąteczna atmosfera wypełniła Państwa domy ciepłem, nadzieją i życzliwością, a nadchodzący Nowy Rok przyniósł pomyślność, szczęście oraz realizację osobistych planów i marzeń. Niech Święta staną się okazją do odpoczynku, refleksji i odnalezienia wewnętrznej harmonii. Z serdecznymi pozdrowieniami, Zespół ZOL w Koprzywnicy."
+      ],
+      "images": ["/static/events/2025/zyczenia-bozonarodzeniowe/1.png"]
     }
   ]
 }
