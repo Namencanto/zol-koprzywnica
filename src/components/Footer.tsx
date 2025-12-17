@@ -46,21 +46,19 @@ const Footer = () => {
             <div className="flex flex-wrap ">
               <p className="mr-1 text-gray-200">Tel. Komórkowy:</p>
               <Link
-                href={`tel:${contactData.phoneNumbers[0]}`}
+                href={`tel:${
+                  contactData.phoneNumberHref || contactData.phoneNumber
+                }`}
                 aria-label="Telefon komórkowy"
                 title="Telefon komórkowy"
-                className="text-gray-200 transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800 mr-2"
-              >
-                {contactData.phoneNumbers[0]},
-              </Link>
-              <Link
-                href={`tel:${contactData.phoneNumbers[1]}`}
-                aria-label="Telefon komórkowy 2"
-                title="Telefon komórkowy 2"
                 className="text-gray-200 transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                {contactData.phoneNumbers[1]}
+                {contactData.phoneNumber}
               </Link>
+            </div>
+            <div className="flex flex-wrap ">
+              <p className="mr-1 text-gray-200">Godziny kontaktu:</p>
+              <p className="text-gray-200">{contactData.workingHours}</p>
             </div>
             <div className="flex flex-wrap ">
               <p className="mr-1 text-gray-200">Email:</p>

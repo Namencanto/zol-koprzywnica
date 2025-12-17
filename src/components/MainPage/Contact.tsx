@@ -422,26 +422,23 @@ const Contact = () => {
                     <div className="flex">
                       <p className="mr-1 text-text-gray-300">Tel. komórkowy:</p>
                       <Link
-                        href={`tel:${contactData.phoneNumbers[0]}`}
+                        href={`tel:${
+                          contactData.phoneNumberHref || contactData.phoneNumber
+                        }`}
                         aria-label="Telefon komórkowy"
                         title="Telefon komórkowy"
                         className="text-text-gray-300"
                       >
-                        {contactData.phoneNumbers[0]}
+                        {contactData.phoneNumber}
                       </Link>
                     </div>
                     <div className="flex">
                       <p className="mr-1 text-text-gray-300">
-                        Tel. komórkowy 2:
+                        Godziny kontaktu:
                       </p>
-                      <Link
-                        href={`tel:${contactData.phoneNumbers[1]}`}
-                        aria-label="Telefon komórkowy 2"
-                        title="Telefon komórkowy 2"
-                        className="text-text-gray-300"
-                      >
-                        {contactData.phoneNumbers[1]}
-                      </Link>
+                      <p className="text-text-gray-300">
+                        {contactData.workingHours}
+                      </p>
                     </div>
                     <div className="flex flex-wrap break-all">
                       <p className="mr-1 text-text-gray-300">Email:</p>

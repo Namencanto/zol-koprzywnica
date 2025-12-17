@@ -108,26 +108,24 @@ const PolitykaPrywatnosci: NextPage = () => {
                 </Link>
                 <br />
                 <Link
-                  href={`tel:${contactData.phoneNumbers[0]}`}
+                  href={`tel:${
+                    contactData.phoneNumberHref || contactData.phoneNumber
+                  }`}
                   title="Telefon komórkowy"
                   className="text-sm text-primary"
                 >
                   Telefon komórkowy:{" "}
                   <span className="font-semibold">
-                    {contactData.phoneNumbers[0]}
+                    {contactData.phoneNumber}
                   </span>
                 </Link>
                 <br />
-                <Link
-                  href={`tel:${contactData.phoneNumbers[1]}`}
-                  title="Telefon komórkowy 2"
-                  className="text-sm text-primary"
-                >
-                  Telefon komórkowy 2:{" "}
+                <p className="text-sm">
+                  Godziny kontaktu:{" "}
                   <span className="font-semibold">
-                    {contactData.phoneNumbers[1]}
+                    {contactData.workingHours}
                   </span>
-                </Link>
+                </p>
               </div>
             </section>
             <section className="mb-4">
